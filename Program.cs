@@ -53,7 +53,6 @@ namespace WrongWriteCode
                while (j < columns)
                {
                   Console.Write("{0}\t", table[i, j]);
-
                   j++;
                }
 
@@ -65,8 +64,6 @@ namespace WrongWriteCode
          FillArrayDouble();
 
          PrintArrayDouble();
-
-         //Console.WriteLine();
 
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Проверка наличия элемента в двумерном массиве");
