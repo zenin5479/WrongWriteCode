@@ -42,13 +42,6 @@ namespace WrongWriteCode
                
                i++;
             }
-            
-            
-            for (  )
-            {
-               
-
-            }
          }
 
          void PrintArrayDouble()
