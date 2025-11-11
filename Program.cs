@@ -50,7 +50,7 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < columns; j++)
                {
-                  Console.Write("| {0}\t", table[i, j]);
+                  Console.Write("{0}\t", table[i, j]);
                }
                Console.WriteLine();
             }
