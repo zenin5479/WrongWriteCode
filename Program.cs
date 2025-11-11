@@ -40,9 +40,7 @@ namespace WrongWriteCode
 
          SizeRow();
 
-
          int m;
-
          void SizeColumn()
          {
             do
@@ -57,18 +55,17 @@ namespace WrongWriteCode
             } while (m <= 0 || m > 20);
          }
 
+         SizeColumn();
 
-         int rows = 3;
-         int columns = 4;
-         double[,] table = new double[rows, columns];
+         double[,] table = new double[n, m];
          void FillArrayDouble()
          {
             Random chance = new Random();
             int i = 0;
-            while (i < rows)
+            while (i < n)
             {
                int j = 0;
-               while (j < columns)
+               while (j < m)
                {
                   table[i, j] = Math.Round((chance.NextDouble() * chance.Next(-999, 1000)), 1);
                   j++;
@@ -81,10 +78,10 @@ namespace WrongWriteCode
          void PrintArrayDouble()
          {
             int i = 0;
-            while (i < rows)
+            while (i < n)
             {
                int j = 0;
-               while (j < columns)
+               while (j < m)
                {
                   Console.Write("{0}\t", table[i, j]);
                   j++;
