@@ -59,9 +59,6 @@ namespace WrongWriteCode
 
                i++;
                Console.WriteLine();
-
-
-
             }
          }
 
@@ -69,7 +66,7 @@ namespace WrongWriteCode
 
          PrintArrayDouble();
 
-         Console.WriteLine();
+         //Console.WriteLine();
 
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Проверка наличия элемента в двумерном массиве");
