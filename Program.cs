@@ -27,7 +27,7 @@ namespace WrongWriteCode
          int rows = 3;
          int columns = 4;
          double[,] array = new double[rows, columns];
-         void FillArray()
+         void FillArrayDouble()
          {
             Random chance = new Random();
             for (int i = 0; i < rows; i++)
@@ -52,7 +52,7 @@ namespace WrongWriteCode
             }
          }
 
-         FillArray();
+         FillArrayDouble();
 
          PrintArray();
 
