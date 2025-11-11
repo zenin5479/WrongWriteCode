@@ -46,13 +46,24 @@ namespace WrongWriteCode
 
          void PrintArrayDouble()
          {
-            for (int i = 0; i < rows; i++)
+           int i = 0;
+            while (i < rows)
             {
+               
                for (int j = 0; j < columns; j++)
                {
                   Console.Write("{0}\t", table[i, j]);
                }
                Console.WriteLine();
+               
+               
+               i++;
+            }
+
+            
+            for (  )
+            {
+               
             }
          }
 
