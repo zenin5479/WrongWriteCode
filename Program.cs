@@ -40,7 +40,7 @@ namespace WrongWriteCode
             }
          }
 
-         void PrintArray()
+         void PrintArrayDouble()
          {
             for (int i = 0; i < rows; i++)
             {
@@ -54,7 +54,7 @@ namespace WrongWriteCode
 
          FillArrayDouble();
 
-         PrintArray();
+         PrintArrayDouble();
 
          Console.WriteLine();
 
