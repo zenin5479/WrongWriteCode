@@ -40,11 +40,11 @@ namespace WrongWriteCode
             return n;
          }
 
-
+         int m;
 
          int SizeColumn()
          {
-            int m;
+
             do
             {
                Console.WriteLine("Введите количество столбцов массива:");
