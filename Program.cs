@@ -29,13 +29,13 @@ namespace WrongWriteCode
          {
             do
             {
-               Console.WriteLine("Введите количество строк массива:");
+               Console.Write("Введите количество строк массива: ");
                int.TryParse(Console.ReadLine(), out n);
-               if (n <= 0 || n > 20)
+               if (n <= 0 || n > 10)
                {
                   Console.WriteLine("Введено неверное значение");
                }
-            } while (n <= 0 || n > 20);
+            } while (n <= 0 || n > 10);
          }
 
          SizeRow();
@@ -45,14 +45,14 @@ namespace WrongWriteCode
          {
             do
             {
-               Console.WriteLine("Введите количество столбцов массива:");
+               Console.Write("Введите количество столбцов массива: ");
                int.TryParse(Console.ReadLine(), out m);
                //m = Convert.ToInt32(Console.ReadLine());
-               if (m <= 0 || m > 20)
+               if (m <= 0 || m > 10)
                {
                   Console.WriteLine("Введено неверное значение");
                }
-            } while (m <= 0 || m > 20);
+            } while (m <= 0 || m > 10);
          }
 
          SizeColumn();
