@@ -26,7 +26,7 @@ namespace WrongWriteCode
          Console.WriteLine("----------------------------------------------");
          int rows = 3;
          int columns = 4;
-         double[,] Table = new double[rows, columns];
+         double[,] table = new double[rows, columns];
          void FillArrayDouble()
          {
             Random chance = new Random();
@@ -34,7 +34,7 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < columns; j++)
                {
-                  Table[i, j] = Math.Round((chance.NextDouble() * chance.Next(-10000, 10001)), 1);
+                  table[i, j] = Math.Round((chance.NextDouble() * chance.Next(-10000, 10001)), 1);
                }
 
             }
@@ -46,7 +46,7 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < columns; j++)
                {
-                  Console.Write(" {0}  ", Table[i, j]);
+                  Console.Write(" {0}  ", table[i, j]);
                }
                Console.WriteLine();
             }
