@@ -99,9 +99,9 @@ namespace WrongWriteCode
          Console.WriteLine("Проверка наличия элемента в двумерном массиве");
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Найдите среднее арифметическое элементов в каждом столбце");
-         Console.Write("Введите позицию элемента двумерного массива i: ");
+         Console.Write("Введите номер строки элемента двумерного массива: ");
          int i = Convert.ToInt32(Console.ReadLine());
-         Console.Write("Введите позицию элемента двумерного массива j: ");
+         Console.Write("Введите номер столбца элемента двумерного массива: ");
          int j = Convert.ToInt32(Console.ReadLine());
          Random grid = new Random();
          int row = grid.Next(2, 5);
