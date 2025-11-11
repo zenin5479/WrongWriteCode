@@ -33,13 +33,15 @@ namespace WrongWriteCode
             int i = 0;
             while (i < rows)
             {
-               
-               
-               for (int j = 0; j < columns; j++)
+               int j = 0;
+               while (j < columns)
                {
                   table[i, j] = Math.Round((chance.NextDouble() * chance.Next(-10000, 10001)), 1);
+
+
+                  j++;
                }
-               
+
                i++;
             }
          }
