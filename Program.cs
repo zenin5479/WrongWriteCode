@@ -24,6 +24,24 @@ namespace WrongWriteCode
          Console.WriteLine("----------------------------------------------");
          Console.WriteLine("Двумерный массив, случайных вещественных чисел");
          Console.WriteLine("----------------------------------------------");
+
+         int SizeRow()
+         {
+            int n;
+            do
+            {
+               Console.WriteLine("Введите количество строк массива:");
+               int.TryParse(Console.ReadLine(), out n);
+               //n = Convert.ToInt32(Console.ReadLine());
+               if (n <= 0 || n > 20)
+               {
+                  Console.WriteLine("Введено неверное значение");
+               }
+            } while (n <= 0 || n > 20);
+
+            return n;
+         }
+
          int rows = 3;
          int columns = 4;
          double[,] table = new double[rows, columns];
