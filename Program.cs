@@ -30,12 +30,23 @@ namespace WrongWriteCode
          void FillArrayDouble()
          {
             Random chance = new Random();
-            for (int i = 0; i < rows; i++)
+            int i = 0;
+            while (i < rows)
             {
+               
+               
                for (int j = 0; j < columns; j++)
                {
                   table[i, j] = Math.Round((chance.NextDouble() * chance.Next(-10000, 10001)), 1);
                }
+               
+               i++;
+            }
+            
+            
+            for (  )
+            {
+               
 
             }
          }
