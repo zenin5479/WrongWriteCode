@@ -29,12 +29,12 @@ namespace WrongWriteCode
          double[,] array = new double[rows, columns];
          void FillArray()
          {
-            Random rand = new Random();
+            Random Chance = new Random();
             for (int i = 0; i < rows; i++)
             {
                for (int j = 0; j < columns; j++)
                {
-                  array[i, j] = Math.Round((rand.NextDouble() * rand.Next(-10000, 10001)), 1);
+                  array[i, j] = Math.Round((Chance.NextDouble() * Chance.Next(-10000, 10001)), 1);
                }
 
             }
