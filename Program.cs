@@ -31,11 +31,11 @@ namespace WrongWriteCode
             {
                Console.Write("Введите количество строк массива: ");
                int.TryParse(Console.ReadLine(), out n);
-               if (n <= 0 || n > 10)
+               if (n <= 1 || n > 10)
                {
                   Console.WriteLine("Введено неверное значение");
                }
-            } while (n <= 0 || n > 10);
+            } while (n <= 1 || n > 10);
          }
 
          SizeRow();
@@ -47,11 +47,11 @@ namespace WrongWriteCode
             {
                Console.Write("Введите количество столбцов массива: ");
                int.TryParse(Console.ReadLine(), out m);
-               if (m <= 0 || m > 10)
+               if (m <= 1 || m > 10)
                {
                   Console.WriteLine("Введено неверное значение");
                }
-            } while (m <= 0 || m > 10);
+            } while (m <= 1 || m > 10);
          }
 
          SizeColumn();
@@ -103,9 +103,9 @@ namespace WrongWriteCode
          int i = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите позицию элемента двумерного массива j: ");
          int j = Convert.ToInt32(Console.ReadLine());
-         Random Grid = new Random();
-         int row = Grid.Next(2, 5);
-         int column = Grid.Next(2, 5);
+         Random grid = new Random();
+         int row = grid.Next(2, 5);
+         int column = grid.Next(2, 5);
          int[,] arr = new int[row, column];
 
          void FillArr()
