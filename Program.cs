@@ -103,9 +103,9 @@ namespace WrongWriteCode
          int i = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите позицию элемента двумерного массива j: ");
          int j = Convert.ToInt32(Console.ReadLine());
-         Random rnd = new Random();
-         int row = rnd.Next(2, 5);
-         int column = rnd.Next(2, 5);
+         Random Grid = new Random();
+         int row = Grid.Next(2, 5);
+         int column = Grid.Next(2, 5);
          int[,] arr = new int[row, column];
 
          void FillArr()
