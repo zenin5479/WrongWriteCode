@@ -42,6 +42,9 @@ namespace WrongWriteCode
             return n;
          }
 
+
+
+
          int rows = 3;
          int columns = 4;
          double[,] table = new double[rows, columns];
