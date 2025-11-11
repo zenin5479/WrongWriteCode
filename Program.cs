@@ -34,7 +34,7 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < columns; j++)
                {
-                  array[i, j] = Math.Round((rand.NextDouble() * rand.Next(-10000, 9999)), 1);
+                  array[i, j] = Math.Round((rand.NextDouble() * rand.Next(-10000, 10001)), 1);
                }
 
             }
