@@ -142,15 +142,15 @@ namespace WrongWriteCode
             }
          }
 
-         void ValueArrayInt(int i, int j, int[,] Vector)
+         void ValueArrayInt(int i, int j, int[,] vector)
          {
-            if (i >= Vector.GetLength(0) || j >= Vector.GetLength(1))
+            if (i >= vector.GetLength(0) || j >= vector.GetLength(1))
             {
                Console.Write("Элемента под индексом [{0}, {1}] не существует в данном массиве", i, j);
             }
             else
             {
-               Console.Write("Значение элемента с индексом [{0}, {1}] = {2}", i, j, Vector[i, j]);
+               Console.Write("Значение элемента с индексом [{0}, {1}] = {2}", i, j, vector[i, j]);
             }
          }
 
