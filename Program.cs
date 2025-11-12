@@ -130,24 +130,16 @@ namespace WrongWriteCode
             int i = 0;
             while (i < line)
             {
-               int j = 0; 
-              
-               while ( j < tower)
+               int j = 0;
+               while (j < tower)
                {
                   Console.Write(" {0}  ", range[i, j]);
-                  
-                  
                   j++;
                }
 
-                i++;
-
+               i++;
                Console.WriteLine();
             }
-
-           
-               
-            
          }
 
          void ValueArr(int i, int j, int[,] arr)
