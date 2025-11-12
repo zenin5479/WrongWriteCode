@@ -119,14 +119,12 @@ namespace WrongWriteCode
                int j = 0;
                while (j < tower)
                {
+                   range[i, j] = stochastic.Next(10, 100);
                   j++;
                }
 
 
-               for ()
-               {
-                  range[i, j] = stochastic.Next(10, 100);
-               }
+               
 
                i++;
             }
