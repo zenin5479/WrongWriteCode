@@ -363,8 +363,12 @@ namespace WrongWriteCode
 
          // Заполняем случайными значениями 0 и 1
          for (int i = 0; i < 5; i++)
-         for (int j = 0; j < 5; j++)
-            grid[i, j] = rnd.Next(2);
+         {
+            for (int j = 0; j < 5; j++)
+            {
+               grid[i, j] = rnd.Next(2);
+            }
+         }
 
          // Принудительно задаем старт и финиш как единицы
          grid[0, 0] = 1;
@@ -378,7 +382,10 @@ namespace WrongWriteCode
          for (int i = 0; i < 5; i++)
          {
             for (int j = 0; j < 5; j++)
+            {
                Console.Write(grid[i, j] + " ");
+            }
+
             Console.WriteLine();
          }
       }
@@ -399,10 +406,11 @@ namespace WrongWriteCode
          while (stack.Count > 0)
          {
             var (x, y) = stack.Pop();
-
             // Если достигли цели
             if (x == 4 && y == 4)
+            {
                return true;
+            }
 
             // Проверяем всех соседей
             for (int i = 0; i < 4; i++)
@@ -411,9 +419,7 @@ namespace WrongWriteCode
                int ny = y + dy[i];
 
                // Проверяем границы массива и доступность клетки
-               if (nx >= 0 && nx < 5 && ny >= 0 && ny < 5
-                   && grid[nx, ny] == 1
-                   && !visited[nx, ny])
+               if (nx >= 0 && nx < 5 && ny >= 0 && ny < 5 && grid[nx, ny] == 1 && !visited[nx, ny])
                {
                   visited[nx, ny] = true;
                   stack.Push((nx, ny));
