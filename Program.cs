@@ -134,17 +134,15 @@ namespace WrongWriteCode
               
                while ( j < tower)
                {
+                  Console.Write(" {0}  ", range[i, j]);
+                  
+                  
                   j++;
                }
-               
-               for ( )
-               {
-                  Console.Write(" {0}  ", range[i, j]);
-               }
+
+                i++;
 
                Console.WriteLine();
-               i++;
-
             }
 
            
