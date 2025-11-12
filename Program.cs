@@ -356,7 +356,6 @@ namespace WrongWriteCode
          Console.ReadLine();
       }
 
-
       static int[,] GenerateGrid()
       {
          Random rnd = new Random();
