@@ -102,7 +102,7 @@ namespace WrongWriteCode
          Console.Write("Введите номер строки элемента двумерного массива: ");
          int indexrow = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите номер столбца элемента двумерного массива: ");
-         int columns = Convert.ToInt32(Console.ReadLine());
+         int indexcol = Convert.ToInt32(Console.ReadLine());
          Random grid = new Random();
          int row = grid.Next(2, 11);
          int column = grid.Next(2, 11);
@@ -165,7 +165,7 @@ namespace WrongWriteCode
 
          PrintArr();
 
-         ValueArr(indexrow, columns, arr);
+         ValueArr(indexrow, indexcol, arr);
          Console.WriteLine("");
          PrintArr();
          Console.WriteLine("");
