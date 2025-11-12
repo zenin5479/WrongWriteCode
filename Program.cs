@@ -127,9 +127,17 @@ namespace WrongWriteCode
 
          void PrintArr()
          {
-            
-            
-            for (int i = 0; i < line; i++)
+            int i = 0;
+            while (i < line)
+            {
+
+               
+               
+               i++;
+
+            }
+
+            for ( )
             {
                for (int j = 0; j < tower; j++)
                {
