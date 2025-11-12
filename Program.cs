@@ -168,12 +168,9 @@ namespace WrongWriteCode
                   sum += range[i, j];
                   i++;
                }
-               for ( )
-               {
 
-               }
                sr = sum / line;
-               Console.Write(sr + "  ");
+               Console.Write(sr + " ");
                j++;
             }
          }
