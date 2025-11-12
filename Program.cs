@@ -123,12 +123,6 @@ namespace WrongWriteCode
                
                i++;
             }
-            
-            for ( )
-            {
-               
-
-            }
          }
 
          void PrintArr()
