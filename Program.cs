@@ -110,12 +110,12 @@ namespace WrongWriteCode
 
          void FillArr()
          {
-            Random Stochastic = new Random();
+            Random stochastic = new Random();
             for (int i = 0; i < line; i++)
             {
                for (int j = 0; j < tower; j++)
                {
-                  range[i, j] = Stochastic.Next(10, 100);
+                  range[i, j] = stochastic.Next(10, 100);
                }
 
             }
