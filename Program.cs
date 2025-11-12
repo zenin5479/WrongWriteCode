@@ -360,7 +360,6 @@ namespace WrongWriteCode
       {
          Random rnd = new Random();
          int[,] grid = new int[5, 5];
-
          // Заполняем случайными значениями 0 и 1
          for (int i = 0; i < 5; i++)
          {
@@ -394,7 +393,6 @@ namespace WrongWriteCode
       {
          bool[,] visited = new bool[5, 5];
          Stack<(int x, int y)> stack = new Stack<(int, int)>();
-
          // Начальная позиция
          stack.Push((0, 0));
          visited[0, 0] = true;
@@ -402,7 +400,6 @@ namespace WrongWriteCode
          // Возможные направления движения (вниз, вправо, вверх, влево)
          int[] dx = { 1, 0, -1, 0 };
          int[] dy = { 0, 1, 0, -1 };
-
          while (stack.Count > 0)
          {
             var (x, y) = stack.Pop();
