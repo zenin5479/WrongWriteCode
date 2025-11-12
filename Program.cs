@@ -104,14 +104,14 @@ namespace WrongWriteCode
          Console.Write("Введите номер столбца элемента двумерного массива: ");
          int indexcol = Convert.ToInt32(Console.ReadLine());
          Random grid = new Random();
-         int row = grid.Next(2, 11);
+         int line = grid.Next(2, 11);
          int column = grid.Next(2, 11);
-         int[,] arr = new int[row, column];
+         int[,] arr = new int[line, column];
 
          void FillArr()
          {
             Random rand = new Random();
-            for (int i = 0; i < row; i++)
+            for (int i = 0; i < line; i++)
             {
                for (int j = 0; j < column; j++)
                {
@@ -123,7 +123,7 @@ namespace WrongWriteCode
 
          void PrintArr()
          {
-            for (int i = 0; i < row; i++)
+            for (int i = 0; i < line; i++)
             {
                for (int j = 0; j < column; j++)
                {
@@ -152,11 +152,11 @@ namespace WrongWriteCode
             for (int j = 0; j < column; j++)
             {
                double sum = 0;
-               for (int i = 0; i < row; i++)
+               for (int i = 0; i < line; i++)
                {
                   sum += arr[i, j];
                }
-               sr = sum / row;
+               sr = sum / line;
                Console.Write(sr + "  ");
             }
          }
