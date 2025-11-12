@@ -146,14 +146,12 @@ namespace WrongWriteCode
          {
             if (i >= arr.GetLength(0) || j >= arr.GetLength(1))
             {
-
                Console.Write("Элемента под индексом [{0}, {1}] не существует в данном массиве", i, j);
-
-
-               Console.WriteLine($"элемента под индексом [{i}, {j}] не существует в данном массиве");
             }
             else
             {
+               Console.Write("Значение элемента под индексом [{0}, {1}] не существует в данном массиве", i, j);
+
                Console.WriteLine($"значение элемента под индексом [{i}, {j}]  = {arr[i, j]}");
             }
          }
