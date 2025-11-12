@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 // Как не нужно писать код
 // Задача: Задайте двумерный массив размером mxn, заполненный случайными вещественными числами
@@ -346,9 +345,92 @@ namespace WrongWriteCode
 
          Console.WriteLine();
 
-         
+         int[,] griddes = new int[5, 5];
+         Random rnd = new Random();
+
+         // Заполняем массив случайными 0 и 1
+         for (int i = 0; i < 5; i++)
+         {
+            for (int j = 0; j < 5; j++)
+            {
+               griddes[i, j] = rnd.Next(2);
+            }
+         }
+
+         // Принудительно задаем старт и финиш единицами
+         griddes[0, 0] = 1;
+         griddes[4, 4] = 1;
+
+         // Выводим массив для наглядности
+         Console.WriteLine("Массив:");
+         for (int i = 0; i < 5; i++)
+         {
+            for (int j = 0; j < 5; j++)
+            {
+               Console.Write(griddes[i, j] + " ");
+            }
+            Console.WriteLine();
+         }
+
+         // Проверяем путь
+         bool hasPath = CheckPath(griddes);
+         Console.WriteLine(hasPath ? "Путь существует!" : "Путь не существует");
 
          Console.ReadLine();
+      }
+
+      static bool CheckPath(int[,] grid)
+      {
+         // Очередь для BFS (максимум 25 элементов)
+         int[] queueX = new int[25];
+         int[] queueY = new int[25];
+         int front = 0, rear = 0;
+
+         // Массив посещенных клеток
+         bool[,] visited = new bool[5, 5];
+
+         // Направления движения: вверх, вправо, вниз, влево
+         int[] dx = { -1, 0, 1, 0 };
+         int[] dy = { 0, 1, 0, -1 };
+
+         // Добавляем стартовую позицию в очередь
+         queueX[rear] = 0;
+         queueY[rear] = 0;
+         rear++;
+         visited[0, 0] = true;
+
+         while (front < rear)
+         {
+            // Извлекаем текущую позицию
+            int x = queueX[front];
+            int y = queueY[front];
+            front++;
+
+            // Если дошли до цели
+            if (x == 4 && y == 4)
+               return true;
+
+            // Проверяем всех соседей
+            for (int i = 0; i < 4; i++)
+            {
+               int nx = x + dx[i];
+               int ny = y + dy[i];
+
+               // Проверяем границы и доступность клетки
+               if (nx >= 0 && nx < 5 && ny >= 0 && ny < 5 &&
+                   grid[nx, ny] == 1 &&
+                   !visited[nx, ny])
+               {
+                  // Добавляем в очередь и отмечаем посещенной
+                  queueX[rear] = nx;
+                  queueY[rear] = ny;
+                  rear++;
+                  visited[nx, ny] = true;
+               }
+            }
+         }
+
+         return false;
       }
    }
 }
