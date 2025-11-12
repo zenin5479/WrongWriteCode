@@ -156,17 +156,19 @@ namespace WrongWriteCode
 
          void AverValueColumnsArr()
          {
-            double sr = 0;
+            double sr;
             Console.WriteLine("Среднеарифмитическое столбцов:");
-            for (int j = 0; j < tower; j++)
+            int j = 0;
+            while (j < tower)
             {
-               double sum = 0;
+                double sum = 0;
                for (int i = 0; i < line; i++)
                {
                   sum += range[i, j];
                }
                sr = sum / line;
                Console.Write(sr + "  ");
+               j++;
             }
          }
 
