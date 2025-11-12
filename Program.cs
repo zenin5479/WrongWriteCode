@@ -161,10 +161,16 @@ namespace WrongWriteCode
             int j = 0;
             while (j < tower)
             {
-                double sum = 0;
-               for (int i = 0; i < line; i++)
+               double sum = 0;
+               int i = 0;
+               while (i < line)
                {
                   sum += range[i, j];
+                  i++;
+               }
+               for ( )
+               {
+
                }
                sr = sum / line;
                Console.Write(sr + "  ");
