@@ -105,17 +105,17 @@ namespace WrongWriteCode
          int indexcol = Convert.ToInt32(Console.ReadLine());
          Random grid = new Random();
          int line = grid.Next(2, 11);
-         int column = grid.Next(2, 11);
-         int[,] arr = new int[line, column];
+         int tower = grid.Next(2, 11);
+         int[,] range = new int[line, tower];
 
          void FillArr()
          {
             Random rand = new Random();
             for (int i = 0; i < line; i++)
             {
-               for (int j = 0; j < column; j++)
+               for (int j = 0; j < tower; j++)
                {
-                  arr[i, j] = rand.Next(10, 100);
+                  range[i, j] = rand.Next(10, 100);
                }
 
             }
@@ -125,9 +125,9 @@ namespace WrongWriteCode
          {
             for (int i = 0; i < line; i++)
             {
-               for (int j = 0; j < column; j++)
+               for (int j = 0; j < tower; j++)
                {
-                  Console.Write(" {0}  ", arr[i, j]);
+                  Console.Write(" {0}  ", range[i, j]);
                }
                Console.WriteLine();
             }
@@ -149,12 +149,12 @@ namespace WrongWriteCode
          {
             double sr = 0;
             Console.WriteLine("Среднеарифмитическое столбцов:");
-            for (int j = 0; j < column; j++)
+            for (int j = 0; j < tower; j++)
             {
                double sum = 0;
                for (int i = 0; i < line; i++)
                {
-                  sum += arr[i, j];
+                  sum += range[i, j];
                }
                sr = sum / line;
                Console.Write(sr + "  ");
@@ -165,7 +165,7 @@ namespace WrongWriteCode
 
          PrintArr();
 
-         ValueArr(indexrow, indexcol, arr);
+         ValueArr(indexrow, indexcol, range);
          Console.WriteLine("");
          PrintArr();
          Console.WriteLine("");
