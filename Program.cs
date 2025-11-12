@@ -150,7 +150,7 @@ namespace WrongWriteCode
             }
             else
             {
-               Console.Write("Значение элемента под индексом [{0}, {1}] не существует в данном массиве", i, j);
+               Console.Write("Значение элемента под индексом [{0}, {1}] = {2}", i, j, arr[i, j]);
 
                Console.WriteLine($"значение элемента под индексом [{i}, {j}]  = {arr[i, j]}");
             }
