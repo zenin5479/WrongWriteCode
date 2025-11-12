@@ -346,11 +346,11 @@ namespace WrongWriteCode
 
          Console.WriteLine();
 
-         int[,] gridded = GenerateGrid();
+         int[,] Selection = GenerateGrid();
          Console.WriteLine("Сгенерированный массив:");
-         PrintGrid(gridded);
+         PrintGrid(Selection);
 
-         bool hasPath = CheckPath(gridded);
+         bool hasPath = CheckPath(Selection);
          Console.WriteLine(hasPath ? "Путь существует!" : "Путь не существует.");
 
          Console.ReadLine();
