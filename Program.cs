@@ -108,7 +108,7 @@ namespace WrongWriteCode
          int tower = grid.Next(2, 11);
          int[,] range = new int[line, tower];
 
-         void FillArr()
+         void FillArrayInt()
          {
             Random stochastic = new Random();
             int i = 0;
@@ -125,7 +125,7 @@ namespace WrongWriteCode
             }
          }
 
-         void PrintArr()
+         void PrintArrayInt()
          {
             int i = 0;
             while (i < line)
@@ -142,7 +142,7 @@ namespace WrongWriteCode
             }
          }
 
-         void ValueArr(int i, int j, int[,] arr)
+         void ValueArrayInt(int i, int j, int[,] arr)
          {
             if (i >= arr.GetLength(0) || j >= arr.GetLength(1))
             {
@@ -170,13 +170,13 @@ namespace WrongWriteCode
             }
          }
 
-         FillArr();
+         FillArrayInt();
 
-         PrintArr();
+         PrintArrayInt();
 
-         ValueArr(indexrow, indexcol, range);
+         ValueArrayInt(indexrow, indexcol, range);
          Console.WriteLine("");
-         PrintArr();
+         PrintArrayInt();
          Console.WriteLine("");
          AverValueColumnsArr();
 
