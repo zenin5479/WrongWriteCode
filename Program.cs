@@ -346,85 +346,9 @@ namespace WrongWriteCode
 
          Console.WriteLine();
 
-         int[,] selection = GenerateGrid();
-         Console.WriteLine("Сгенерированный массив:");
-         PrintGrid(selection);
-
-         bool hasPath = CheckPath(selection);
-         Console.WriteLine(hasPath ? "Путь существует!" : "Путь не существует.");
+         
 
          Console.ReadLine();
-      }
-
-      static int[,] GenerateGrid()
-      {
-         Random rnd = new Random();
-         int[,] grid = new int[5, 5];
-         // Заполняем случайными значениями 0 и 1
-         for (int i = 0; i < 5; i++)
-         {
-            for (int j = 0; j < 5; j++)
-            {
-               grid[i, j] = rnd.Next(2);
-            }
-         }
-
-         // Принудительно задаем старт и финиш как единицы
-         grid[0, 0] = 1;
-         grid[4, 4] = 1;
-
-         return grid;
-      }
-
-      static void PrintGrid(int[,] grid)
-      {
-         for (int i = 0; i < 5; i++)
-         {
-            for (int j = 0; j < 5; j++)
-            {
-               Console.Write(grid[i, j] + " ");
-            }
-
-            Console.WriteLine();
-         }
-      }
-
-      static bool CheckPath(int[,] grid)
-      {
-         bool[,] visited = new bool[5, 5];
-         Stack<(int x, int y)> stack = new Stack<(int, int)>();
-         // Начальная позиция
-         stack.Push((0, 0));
-         visited[0, 0] = true;
-
-         // Возможные направления движения (вниз, вправо, вверх, влево)
-         int[] dx = { 1, 0, -1, 0 };
-         int[] dy = { 0, 1, 0, -1 };
-         while (stack.Count > 0)
-         {
-            var (x, y) = stack.Pop();
-            // Если достигли цели
-            if (x == 4 && y == 4)
-            {
-               return true;
-            }
-
-            // Проверяем всех соседей
-            for (int i = 0; i < 4; i++)
-            {
-               int nx = x + dx[i];
-               int ny = y + dy[i];
-
-               // Проверяем границы массива и доступность клетки
-               if (nx >= 0 && nx < 5 && ny >= 0 && ny < 5 && grid[nx, ny] == 1 && !visited[nx, ny])
-               {
-                  visited[nx, ny] = true;
-                  stack.Push((nx, ny));
-               }
-            }
-         }
-
-         return false;
       }
    }
 }
