@@ -115,7 +115,6 @@ namespace WrongWriteCode
             int i = 0;
             while (i < line)
             {
-
                int j = 0;
                while (j < tower)
                {
