@@ -130,9 +130,14 @@ namespace WrongWriteCode
             int i = 0;
             while (i < line)
             {
-
+               int j = 0; 
+              
+               while ( j < tower)
+               {
+                  j++;
+               }
                
-               for (int j = 0; j < tower; j++)
+               for ( )
                {
                   Console.Write(" {0}  ", range[i, j]);
                }
