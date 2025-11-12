@@ -123,7 +123,6 @@ namespace WrongWriteCode
                   j++;
                }
 
-
                
 
                i++;
