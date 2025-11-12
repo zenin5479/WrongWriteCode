@@ -132,19 +132,19 @@ namespace WrongWriteCode
             {
 
                
-               
-               i++;
-
-            }
-
-            for ( )
-            {
                for (int j = 0; j < tower; j++)
                {
                   Console.Write(" {0}  ", range[i, j]);
                }
+
                Console.WriteLine();
+               i++;
+
             }
+
+           
+               
+            
          }
 
          void ValueArr(int i, int j, int[,] arr)
