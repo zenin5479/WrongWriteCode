@@ -100,12 +100,12 @@ namespace WrongWriteCode
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Найдите среднее арифметическое элементов в каждом столбце");
          Console.Write("Введите номер строки элемента двумерного массива: ");
-         int rows = Convert.ToInt32(Console.ReadLine());
+         int indexrow = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите номер столбца элемента двумерного массива: ");
          int columns = Convert.ToInt32(Console.ReadLine());
          Random grid = new Random();
-         int row = grid.Next(2, 5);
-         int column = grid.Next(2, 5);
+         int row = grid.Next(2, 11);
+         int column = grid.Next(2, 11);
          int[,] arr = new int[row, column];
 
          void FillArr()
@@ -165,7 +165,7 @@ namespace WrongWriteCode
 
          PrintArr();
 
-         ValueArr(rows, columns, arr);
+         ValueArr(indexrow, columns, arr);
          Console.WriteLine("");
          PrintArr();
          Console.WriteLine("");
