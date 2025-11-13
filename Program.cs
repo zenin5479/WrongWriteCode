@@ -200,7 +200,7 @@ namespace WrongWriteCode
          int coltwo = probabilistic.Next(3, 4);
          int[,] matrixtwo = new int[rowtwo, coltwo];
          // Метод заполнения массива
-         void FillArr1(int[,] matrix)                                           
+         void Complete2DArray(int[,] matrix)                                           
          {
             int row = matrix.GetLength(0);
             int column = matrix.GetLength(1);
@@ -249,8 +249,8 @@ namespace WrongWriteCode
          }
 
 
-         FillArr1(matrixone);
-         FillArr1(matrixtwo);
+         Complete2DArray(matrixone);
+         Complete2DArray(matrixtwo);
          Console.WriteLine("Матрица А:");
          PrintArr1(matrixone);
          Console.WriteLine("Матрица B:");
