@@ -200,17 +200,17 @@ namespace WrongWriteCode
          int[,] matrixone = new int[rowone, colone];
          int rowtwo = probabilistic.Next(3, 4);
          int coltwo = probabilistic.Next(3, 4);
-         int[,] arr2 = new int[rowtwo, coltwo];
+         int[,] matrixtwo = new int[rowtwo, coltwo];
 
          FillArr1(matrixone);
-         FillArr1(arr2);
+         FillArr1(matrixtwo);
          Console.WriteLine("Матрица А");
          PrintArr1(matrixone);
          Console.WriteLine("Матрица B");
-         PrintArr1(arr2);
+         PrintArr1(matrixtwo);
          Console.WriteLine("Матрица С = А * В :");
-         Multiplication(matrixone, arr2);
-         PrintArr1(Multiplication(matrixone, arr2));
+         Multiplication(matrixone, matrixtwo);
+         PrintArr1(Multiplication(matrixone, matrixtwo));
 
          int[,] Multiplication(int[,] a, int[,] b)                            // метод перемножения матриц
          {
