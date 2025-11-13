@@ -191,23 +191,26 @@ namespace WrongWriteCode
          Console.WriteLine("Умножение матриц");
          Console.WriteLine("----------------");
 
+         //matrixone
+            //matrixtwo
+
          Random probabilistic = new Random();
          int rowone = probabilistic.Next(3, 4);
          int colone = probabilistic.Next(3, 4);
-         int[,] arr1 = new int[rowone, colone];
+         int[,] matrixone = new int[rowone, colone];
          int rowtwo = probabilistic.Next(3, 4);
          int coltwo = probabilistic.Next(3, 4);
          int[,] arr2 = new int[rowtwo, coltwo];
 
-         FillArr1(arr1);
+         FillArr1(matrixone);
          FillArr1(arr2);
          Console.WriteLine("Матрица А");
-         PrintArr1(arr1);
+         PrintArr1(matrixone);
          Console.WriteLine("Матрица B");
          PrintArr1(arr2);
          Console.WriteLine("Матрица С = А * В :");
-         Multiplication(arr1, arr2);
-         PrintArr1(Multiplication(arr1, arr2));
+         Multiplication(matrixone, arr2);
+         PrintArr1(Multiplication(matrixone, arr2));
 
          int[,] Multiplication(int[,] a, int[,] b)                            // метод перемножения матриц
          {
