@@ -179,13 +179,13 @@ namespace WrongWriteCode
          PrintArrayInt();
 
          ValueArrayInt(indexrow, indexcol, range);
-         Console.WriteLine("");
-         Console.WriteLine("");
-         AverageColumnArrayInt();
 
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Cреднеарифметическое значение элементов столбца, двумерного массива целых чисел");
          Console.WriteLine("---------------------------------------------");
+         AverageColumnArrayInt();
+
+         
 
          Console.WriteLine();
 
