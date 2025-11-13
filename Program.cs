@@ -158,7 +158,7 @@ namespace WrongWriteCode
          {
 
 
-            double sr;
+            double average;
             Console.WriteLine("Среднеарифмитическое столбцов:");
             int j = 0;
             while (j < tower)
@@ -171,8 +171,8 @@ namespace WrongWriteCode
                   i++;
                }
 
-               sr = sum / line;
-               Console.Write(sr + " ");
+               average = sum / line;
+               Console.Write(average + " ");
                j++;
             }
          }
