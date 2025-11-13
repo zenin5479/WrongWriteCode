@@ -82,7 +82,7 @@ namespace WrongWriteCode
                int j = 0;
                while (j < m)
                {
-                  Console.Write("{0}\t", table[i, j]);
+                  Console.Write("{0} ", table[i, j]);
                   j++;
                }
 
@@ -179,9 +179,7 @@ namespace WrongWriteCode
                }
 
                average = amount / line;
-               //Console.Write("{0:f2} ", average);
                Console.Write("{0:f} ", average);
-               //Console.Write("{0} ", average);
                j++;
             }
          }
