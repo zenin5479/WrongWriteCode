@@ -355,8 +355,6 @@ namespace WrongWriteCode
          Console.WriteLine("Одномерный массив по условию задачи");
          NumberArray();
 
-
-
          int[,] griddes = new int[5, 5];
          Random rnd = new Random();
 
