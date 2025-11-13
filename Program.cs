@@ -358,8 +358,6 @@ namespace WrongWriteCode
          Console.WriteLine("Одномерный массив по условию задачи");
          NumberArray();
 
-
-
          Console.WriteLine();
 
          int[,] griddes = new int[5, 5];
