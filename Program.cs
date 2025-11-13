@@ -236,7 +236,7 @@ namespace WrongWriteCode
             return r;
          }
 
-         void PrintArr1(int[,] c)                                             // метод вывода массива
+         void Print2DArray(int[,] c)                                             // метод вывода массива
          {
             for (int i = 0; i < c.GetLength(0); i++)
             {
@@ -252,12 +252,12 @@ namespace WrongWriteCode
          Complete2DArray(matrixone);
          Complete2DArray(matrixtwo);
          Console.WriteLine("Матрица А:");
-         PrintArr1(matrixone);
+         Print2DArray(matrixone);
          Console.WriteLine("Матрица B:");
-         PrintArr1(matrixtwo);
+         Print2DArray(matrixtwo);
          Console.WriteLine("Матрица С = А * В:");
          Multiplication(matrixone, matrixtwo);
-         PrintArr1(Multiplication(matrixone, matrixtwo));
+         Print2DArray(Multiplication(matrixone, matrixtwo));
 
 
 
