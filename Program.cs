@@ -200,7 +200,7 @@ namespace WrongWriteCode
          int coltwo = probabilistic.Next(3, 4);
          int[,] matrixtwo = new int[rowtwo, coltwo];
          // Метод заполнения массива
-         void Complete2DArray(int[,] matrix)                                           
+         void Complete2DArray(int[,] matrix)
          {
             int row = matrix.GetLength(0);
             int column = matrix.GetLength(1);
@@ -215,12 +215,17 @@ namespace WrongWriteCode
             }
          }
 
-         int[,] Multiplication(int[,] a, int[,] b)                            // метод перемножения матриц
+         // Метод перемножения матриц
+         int[,] Multiplication(int[,] a, int[,] b)
          {
             if (a.GetLength(1) != b.GetLength(0))
             {
-               if (a.GetLength(1) != b.GetLength(0)) throw new Exception("Матрицы нельзя перемножить");  // принудительная генерация исключения 
+               if (a.GetLength(1) != b.GetLength(0))
+               {
+                  Console.WriteLine("Матрицы нельзя перемножить");
+               }
             }
+
             int[,] r = new int[a.GetLength(0), b.GetLength(1)];
             for (int i = 0; i < a.GetLength(0); i++)
             {
@@ -236,7 +241,8 @@ namespace WrongWriteCode
             return r;
          }
 
-         void Print2DArray(int[,] c)                                             // метод вывода массива
+         // Метод вывода массива
+         void Print2DArray(int[,] c)
          {
             for (int i = 0; i < c.GetLength(0); i++)
             {
@@ -244,10 +250,10 @@ namespace WrongWriteCode
                {
                   Console.Write("{0} ", c[i, j]);
                }
+
                Console.WriteLine();
             }
          }
-
 
          Complete2DArray(matrixone);
          Complete2DArray(matrixtwo);
@@ -259,22 +265,14 @@ namespace WrongWriteCode
          Multiplication(matrixone, matrixtwo);
          Print2DArray(Multiplication(matrixone, matrixtwo));
 
-
-
-         Console.WriteLine();
-
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
          Console.WriteLine("Найдите в этом массиве и сохраните в одномерный массив все числа, сумма цифр которых больше их произведения");
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
 
          int[,] arrayy = new int[3, 4];
-         FillArrayy();
-         Console.WriteLine("Двумернвый массив");
-         PrintArrayy();
-         Console.WriteLine("Одномерный массив по условию задачи");
-         NumberArray();
 
-         void FillArrayy()                                  // метод заполнения двумерного массива
+         // Метод заполнения двумерного массива
+         void FillArrayy()
          {
             int row = arrayy.GetLength(0);
             int column = arrayy.GetLength(1);
@@ -289,7 +287,8 @@ namespace WrongWriteCode
             }
          }
 
-         int CountNumArray(int Number)                      // метод определяет больше ли сумма цифр или произведение цифр элемента массива
+         // Метод определяет больше ли сумма цифр или произведение цифр элемента массива
+         int CountNumArray(int Number)
          {
             int MultCount = 1;
             int SumCount = 0;
@@ -305,7 +304,8 @@ namespace WrongWriteCode
             else return 0;
          }
 
-         void NumberArray()                                 // метод  перевода элементов двумерного массива по условию задачи в одномерный
+         // Метод  перевода элементов двумерного массива по условию задачи в одномерный
+         void NumberArray()
          {
             int row = arrayy.GetLength(0);
             int column = arrayy.GetLength(1);
@@ -338,7 +338,8 @@ namespace WrongWriteCode
             else Console.WriteLine(" ни один из элементов массива не удовлетворил условию задачи");
          }
 
-         void PrintArrayy()                                 // мсетод вывода массива
+         // Метод вывода массива
+         void PrintArrayy()
          {
             int row = arrayy.GetLength(0);
             int column = arrayy.GetLength(1);
@@ -351,6 +352,13 @@ namespace WrongWriteCode
                Console.WriteLine();
             }
          }
+         FillArrayy();
+         Console.WriteLine("Двумернвый массив");
+         PrintArrayy();
+         Console.WriteLine("Одномерный массив по условию задачи");
+         NumberArray();
+
+
 
          Console.WriteLine();
 
