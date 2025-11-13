@@ -190,8 +190,6 @@ namespace WrongWriteCode
          Console.WriteLine("----------------");
          Console.WriteLine("Умножение матриц");
          Console.WriteLine("----------------");
-
-
          Random probabilistic = new Random();
          int rowone = probabilistic.Next(3, 4);
          int colone = probabilistic.Next(3, 4);
