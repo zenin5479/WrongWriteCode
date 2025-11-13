@@ -161,15 +161,15 @@ namespace WrongWriteCode
             int j = 0;
             while (j < tower)
             {
-               double sum = 0;
+               double amount = 0;
                int i = 0;
                while (i < line)
                {
-                  sum += range[i, j];
+                  amount += range[i, j];
                   i++;
                }
 
-               average = sum / line;
+               average = amount / line;
                Console.Write(average + " ");
                j++;
             }
