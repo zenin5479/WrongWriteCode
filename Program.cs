@@ -160,7 +160,7 @@ namespace WrongWriteCode
          ValueArrayInt(indexrow, indexcol, range);
 
          Console.WriteLine("---------------------------------------------");
-         Console.WriteLine("Cреднеарифметическое значение элементов столбца, двумерного массива целых чисел");
+         Console.WriteLine("Cреднеарифметическое значение элементов столбцов, двумерного массива целых чисел");
          Console.WriteLine("---------------------------------------------");
 
          void AverageColumnArrayInt()
@@ -179,9 +179,9 @@ namespace WrongWriteCode
                }
 
                average = amount / line;
-               //Console.Write("{0:f2} ", average);
-               Console.WriteLine("{0:f} ", average);
-               //Console.WriteLine("{0} ", average);
+               Console.Write("{0:f2} ", average);
+               Console.Write("{0:f} ", average);
+               Console.Write("{0} ", average);
                j++;
             }
          }
