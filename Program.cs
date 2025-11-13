@@ -189,7 +189,7 @@ namespace WrongWriteCode
          AverageColumnArrayInt();
 
          Console.WriteLine("---------------------------------------------");
-         Console.WriteLine("среднее арифметическое элементов в каждом столбце");
+         Console.WriteLine("Cреднеарифметическое значение элементов столбца, двумерного массива целых чисел");
          Console.WriteLine("---------------------------------------------");
 
          Console.WriteLine();
