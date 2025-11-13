@@ -192,9 +192,9 @@ namespace WrongWriteCode
          Console.WriteLine("----------------");
 
          Random probabilistic = new Random();
-         int row1 = probabilistic.Next(3, 4);
-         int column1 = probabilistic.Next(3, 4);
-         int[,] arr1 = new int[row1, column1];
+         int rowone = probabilistic.Next(3, 4);
+         int colone = probabilistic.Next(3, 4);
+         int[,] arr1 = new int[rowone, colone];
          int row2 = probabilistic.Next(3, 4);
          int column2 = probabilistic.Next(3, 4);
          int[,] arr2 = new int[row2, column2];
