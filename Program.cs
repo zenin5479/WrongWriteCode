@@ -180,7 +180,6 @@ namespace WrongWriteCode
 
          ValueArrayInt(indexrow, indexcol, range);
          Console.WriteLine("");
-         //PrintArrayInt();
          Console.WriteLine("");
          AverageColumnArrayInt();
 
