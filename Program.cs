@@ -66,7 +66,7 @@ namespace WrongWriteCode
                int j = 0;
                while (j < m)
                {
-                  table[i, j] = Math.Round((chance.NextDouble() * chance.Next(-999, 1000)), 1);
+                  table[i, j] = chance.Next(100, 1000);
                   j++;
                }
 
