@@ -149,7 +149,7 @@ namespace WrongWriteCode
             }
             else
             {
-               Console.Write("Значение элемента с индексом [{0}, {1}] = {2}", i, j, vector[i, j]);
+               Console.WriteLine("Значение элемента с индексом [{0}, {1}] = {2}", i, j, vector[i, j]);
             }
          }
 
