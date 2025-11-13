@@ -98,10 +98,6 @@ namespace WrongWriteCode
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Проверка наличия элемента в двумерном массиве");
          Console.WriteLine("---------------------------------------------");
-
-
-
-
          Console.Write("Введите номер строки элемента двумерного массива: ");
          int indexrow = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите номер столбца элемента двумерного массива: ");
