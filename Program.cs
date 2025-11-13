@@ -82,7 +82,7 @@ namespace WrongWriteCode
                int j = 0;
                while (j < m)
                {
-                  Console.Write("{0} ", table[i, j]);
+                  Console.Write("{0:f} ", table[i, j]);
                   j++;
                }
 
