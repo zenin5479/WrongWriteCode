@@ -179,9 +179,9 @@ namespace WrongWriteCode
                }
 
                average = amount / line;
-               Console.Write("{0:f2} ", average);
+               //Console.Write("{0:f2} ", average);
                Console.Write("{0:f} ", average);
-               Console.Write("{0} ", average);
+               //Console.Write("{0} ", average);
                j++;
             }
          }
