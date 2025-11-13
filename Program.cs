@@ -157,7 +157,7 @@ namespace WrongWriteCode
          void AverValueColumnsArr()
          {
             double average;
-            Console.Write("Среднеарифмитическое столбцов: ");
+            Console.WriteLine("Среднеарифмитическое столбцов:");
             int j = 0;
             while (j < tower)
             {
