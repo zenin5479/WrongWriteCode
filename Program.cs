@@ -154,7 +154,7 @@ namespace WrongWriteCode
             }
          }
 
-         void AverageColumnsArray()
+         void AverageColumnArrayInt()
          {
             double average;
             Console.WriteLine("Среднеарифметическое столбцов:");
@@ -183,7 +183,7 @@ namespace WrongWriteCode
          Console.WriteLine("");
          PrintArrayInt();
          Console.WriteLine("");
-         AverageColumnsArray();
+         AverageColumnArrayInt();
 
          Console.WriteLine();
 
