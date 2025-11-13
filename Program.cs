@@ -266,7 +266,6 @@ namespace WrongWriteCode
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
          Console.WriteLine("Найдите в этом массиве и сохраните в одномерный массив все числа, сумма цифр которых больше их произведения");
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
-
          int[,] arrayy = new int[3, 4];
 
          // Метод заполнения двумерного массива
@@ -356,7 +355,7 @@ namespace WrongWriteCode
          Console.WriteLine("Одномерный массив по условию задачи");
          NumberArray();
 
-         Console.WriteLine();
+
 
          int[,] griddes = new int[5, 5];
          Random rnd = new Random();
@@ -373,7 +372,7 @@ namespace WrongWriteCode
          // Принудительно задаем старт и финиш единицами
          griddes[0, 0] = 1;
          griddes[4, 4] = 1;
-
+         Console.WriteLine();
          // Выводим массив для наглядности
          Console.WriteLine("Массив:");
          for (int i = 0; i < 5; i++)
