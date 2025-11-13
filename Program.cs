@@ -195,9 +195,9 @@ namespace WrongWriteCode
          int rowone = probabilistic.Next(3, 4);
          int colone = probabilistic.Next(3, 4);
          int[,] arr1 = new int[rowone, colone];
-         int row2 = probabilistic.Next(3, 4);
-         int column2 = probabilistic.Next(3, 4);
-         int[,] arr2 = new int[row2, column2];
+         int rowtwo = probabilistic.Next(3, 4);
+         int coltwo = probabilistic.Next(3, 4);
+         int[,] arr2 = new int[rowtwo, coltwo];
 
          FillArr1(arr1);
          FillArr1(arr2);
