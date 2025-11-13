@@ -191,8 +191,6 @@ namespace WrongWriteCode
          Console.WriteLine("Умножение матриц");
          Console.WriteLine("----------------");
 
-         //matrixone
-            //matrixtwo
 
          Random probabilistic = new Random();
          int rowone = probabilistic.Next(3, 4);
@@ -201,16 +199,21 @@ namespace WrongWriteCode
          int rowtwo = probabilistic.Next(3, 4);
          int coltwo = probabilistic.Next(3, 4);
          int[,] matrixtwo = new int[rowtwo, coltwo];
+         // Метод заполнения массива
+         void FillArr1(int[,] matrix)                                           
+         {
+            int row = matrix.GetLength(0);
+            int column = matrix.GetLength(1);
+            Random rand = new Random();
+            for (int i = 0; i < row; i++)
+            {
+               for (int j = 0; j < column; j++)
+               {
+                  matrix[i, j] = rand.Next(-9, 8);
+               }
 
-         FillArr1(matrixone);
-         FillArr1(matrixtwo);
-         Console.WriteLine("Матрица А");
-         PrintArr1(matrixone);
-         Console.WriteLine("Матрица B");
-         PrintArr1(matrixtwo);
-         Console.WriteLine("Матрица С = А * В :");
-         Multiplication(matrixone, matrixtwo);
-         PrintArr1(Multiplication(matrixone, matrixtwo));
+            }
+         }
 
          int[,] Multiplication(int[,] a, int[,] b)                            // метод перемножения матриц
          {
@@ -245,20 +248,18 @@ namespace WrongWriteCode
             }
          }
 
-         void FillArr1(int[,] array)                                           // метод запорлнения массива
-         {
-            int row = array.GetLength(0);
-            int column = array.GetLength(1);
-            Random rand = new Random();
-            for (int i = 0; i < row; i++)
-            {
-               for (int j = 0; j < column; j++)
-               {
-                  array[i, j] = rand.Next(-9, 8);
-               }
 
-            }
-         }
+         FillArr1(matrixone);
+         FillArr1(matrixtwo);
+         Console.WriteLine("Матрица А:");
+         PrintArr1(matrixone);
+         Console.WriteLine("Матрица B:");
+         PrintArr1(matrixtwo);
+         Console.WriteLine("Матрица С = А * В:");
+         Multiplication(matrixone, matrixtwo);
+         PrintArr1(Multiplication(matrixone, matrixtwo));
+
+
 
          Console.WriteLine();
 
