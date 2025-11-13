@@ -191,12 +191,12 @@ namespace WrongWriteCode
          Console.WriteLine("Умножение матриц");
          Console.WriteLine("----------------");
 
-         Random rnd1 = new Random();
-         int row1 = rnd1.Next(3, 4);
-         int column1 = rnd1.Next(3, 4);
+         Random Probabilistic = new Random();
+         int row1 = Probabilistic.Next(3, 4);
+         int column1 = Probabilistic.Next(3, 4);
          int[,] arr1 = new int[row1, column1];
-         int row2 = rnd1.Next(3, 4);
-         int column2 = rnd1.Next(3, 4);
+         int row2 = Probabilistic.Next(3, 4);
+         int column2 = Probabilistic.Next(3, 4);
          int[,] arr2 = new int[row2, column2];
 
          FillArr1(arr1);
