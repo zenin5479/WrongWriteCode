@@ -145,7 +145,7 @@ namespace WrongWriteCode
          {
             if (i >= vector.GetLength(0) || j >= vector.GetLength(1))
             {
-               Console.Write("Элемента под индексом [{0}, {1}] не существует в данном массиве", i, j);
+               Console.WriteLine("Элемента под индексом [{0}, {1}] не существует в данном массиве", i, j);
             }
             else
             {
@@ -184,8 +184,6 @@ namespace WrongWriteCode
          Console.WriteLine("Cреднеарифметическое значение элементов столбца, двумерного массива целых чисел");
          Console.WriteLine("---------------------------------------------");
          AverageColumnArrayInt();
-
-         
 
          Console.WriteLine();
 
