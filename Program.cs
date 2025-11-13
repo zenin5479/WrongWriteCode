@@ -153,8 +153,6 @@ namespace WrongWriteCode
             }
          }
 
-
-
          FillArrayInt();
 
          PrintArrayInt();
@@ -182,11 +180,18 @@ namespace WrongWriteCode
 
                average = amount / line;
                Console.Write(average + " ");
+               //Console.Write("Точка пересечения: [{0:f2}; {1:f2}]", x, y);
+               Console.WriteLine("{0:f2} ", average);
+               Console.WriteLine("{0:f} ", average);
+               Console.WriteLine("{0} ", average);
+               //Console.WriteLine("Точка пересечения: [{0}; {1}]", x, y);
+
+
                j++;
             }
          }
-         AverageColumnArrayInt();
 
+         AverageColumnArrayInt();
          Console.WriteLine();
 
          Console.WriteLine("----------------");
