@@ -182,9 +182,6 @@ namespace WrongWriteCode
                //Console.Write("{0:f2} ", average);
                Console.WriteLine("{0:f} ", average);
                //Console.WriteLine("{0} ", average);
-               //Console.WriteLine("Точка пересечения: [{0}; {1}]", x, y);
-
-
                j++;
             }
          }
