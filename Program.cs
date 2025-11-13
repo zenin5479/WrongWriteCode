@@ -209,7 +209,6 @@ namespace WrongWriteCode
                {
                   matrix[i, j] = rand.Next(-9, 8);
                }
-
             }
          }
 
