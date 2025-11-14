@@ -185,7 +185,7 @@ namespace WrongWriteCode
          }
 
 
-         Print2DArrayInt(int[,] mas);
+         Print2DArrayInt(massif);
 
          void AverageColumnArrayInt()
          {
