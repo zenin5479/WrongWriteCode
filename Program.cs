@@ -181,11 +181,6 @@ namespace WrongWriteCode
                   panoply[i, j] = masiv.Next(10, 100);
                   j++ ;
                }
-               for ()
-               {
-                  
-               }
-               
                
                i++; 
             }
