@@ -172,12 +172,22 @@ namespace WrongWriteCode
             int row = panoply.GetLength(0);
             int column = panoply.GetLength(1);
             Random masiv = new Random();
-            for (int i = 0; i < row; i++)
+            int i = 0;
+            while (i < row)
             {
+               
                for (int j = 0; j < column; j++)
                {
                   panoply[i, j] = masiv.Next(10, 100);
                }
+               
+               
+               i++; 
+            }
+            
+            for ( )
+            {
+               
             }
          }
 
