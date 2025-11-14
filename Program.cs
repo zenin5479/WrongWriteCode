@@ -159,14 +159,33 @@ namespace WrongWriteCode
 
          ValueArrayInt(indexrow, indexcol, range);
 
+
+
+         Console.WriteLine("--------------------------------------------------------------------------------");
+         Console.WriteLine("Cреднеарифметическое значение элементов столбцов, двумерного массива целых чисел");
+         Console.WriteLine("--------------------------------------------------------------------------------");
+
          Random selection = new Random();
          int strip = selection.Next(2, 11);
          int pillar = selection.Next(2, 11);
          int[,] massif = new int[strip, pillar];
 
-         Console.WriteLine("--------------------------------------------------------------------------------");
-         Console.WriteLine("Cреднеарифметическое значение элементов столбцов, двумерного массива целых чисел");
-         Console.WriteLine("--------------------------------------------------------------------------------");
+         void PrintArrayInt(int[,] massif)
+         {
+            int i = 0;
+            while (i < line)
+            {
+               int j = 0;
+               while (j < tower)
+               {
+                  Console.Write("{0}  ", range[i, j]);
+                  j++;
+               }
+
+               i++;
+               Console.WriteLine();
+            }
+         }
 
          void AverageColumnArrayInt()
          {
@@ -207,12 +226,12 @@ namespace WrongWriteCode
          {
             int row = matrix.GetLength(0);
             int column = matrix.GetLength(1);
-            Random massif = new Random();
+            Random masif = new Random();
             for (int i = 0; i < row; i++)
             {
                for (int j = 0; j < column; j++)
                {
-                  matrix[i, j] = massif.Next(-9, 8);
+                  matrix[i, j] = masif.Next(-9, 8);
                }
             }
          }
