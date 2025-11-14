@@ -182,6 +182,8 @@ namespace WrongWriteCode
             }
          }
 
+         
+
          void Print2DArrayInt(int[,] group)
          {
             int i = 0;
@@ -219,6 +221,8 @@ namespace WrongWriteCode
                j++;
             }
          }
+         
+         Complete2DArrayInt(massif);
 
          Print2DArrayInt(massif);
 
