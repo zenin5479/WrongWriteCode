@@ -182,8 +182,6 @@ namespace WrongWriteCode
             }
          }
 
-
-
          void Print2DArrayInt(int[,] group)
          {
             int i = 0;
