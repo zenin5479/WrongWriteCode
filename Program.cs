@@ -171,22 +171,14 @@ namespace WrongWriteCode
          {
             int i = 0;
 
-            for (int i = 0; i < c.GetLength(0); i++)
-            {
-               for (int j = 0; j < c.GetLength(1); j++)
-               {
-                  Console.Write("{0} ", c[i, j]);
-               }
-
-               Console.WriteLine();
-            }
+            
 
 
 
-            while (i < line)
+            while (i < mas.GetLength(0))
             {
                int j = 0;
-               while (j < tower)
+               while (j < mas.GetLength(1))
                {
                   Console.Write("{0}  ", range[i, j]);
                   j++;
