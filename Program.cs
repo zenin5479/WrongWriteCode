@@ -176,7 +176,7 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < column; j++)
                {
-                  panoply[i, j] = masiv.Next(-9, 8);
+                  panoply[i, j] = masiv.Next(10, 100);
                }
             }
          }
