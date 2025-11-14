@@ -162,7 +162,6 @@ namespace WrongWriteCode
          Console.WriteLine("--------------------------------------------------------------------------------");
          Console.WriteLine("Cреднеарифметическое значение элементов столбцов, двумерного массива целых чисел");
          Console.WriteLine("--------------------------------------------------------------------------------");
-
          Random selection = new Random();
          int strip = selection.Next(2, 11);
          int pillar = selection.Next(2, 11);
@@ -171,6 +170,19 @@ namespace WrongWriteCode
          void Print2DArrayInt(int[,] mas)
          {
             int i = 0;
+
+            for (int i = 0; i < c.GetLength(0); i++)
+            {
+               for (int j = 0; j < c.GetLength(1); j++)
+               {
+                  Console.Write("{0} ", c[i, j]);
+               }
+
+               Console.WriteLine();
+            }
+
+
+
             while (i < line)
             {
                int j = 0;
@@ -184,6 +196,7 @@ namespace WrongWriteCode
                Console.WriteLine();
             }
          }
+
 
          void AverageColumnArrayInt()
          {
