@@ -167,6 +167,8 @@ namespace WrongWriteCode
          int pillar = selection.Next(2, 11);
          int[,] massif = new int[strip, pillar];
 
+
+
          void Print2DArrayInt(int[,] group)
          {
             int i = 0;
