@@ -185,6 +185,8 @@ namespace WrongWriteCode
          }
 
 
+         Print2DArrayInt(int[,] mas);
+
          void AverageColumnArrayInt()
          {
             double average;
@@ -205,6 +207,8 @@ namespace WrongWriteCode
                j++;
             }
          }
+
+
 
          AverageColumnArrayInt();
          Console.WriteLine();
