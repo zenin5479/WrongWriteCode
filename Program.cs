@@ -184,9 +184,6 @@ namespace WrongWriteCode
             }
          }
 
-
-         Print2DArrayInt(massif);
-
          void AverageColumn2DArrayInt()
          {
             double average;
@@ -207,6 +204,10 @@ namespace WrongWriteCode
                j++;
             }
          }
+
+         Print2DArrayInt(massif);
+
+
 
          AverageColumn2DArrayInt();
          Console.WriteLine();
