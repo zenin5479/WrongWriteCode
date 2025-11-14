@@ -165,9 +165,7 @@ namespace WrongWriteCode
          Random selection = new Random();
          int strip = selection.Next(2, 11);
          int pillar = selection.Next(2, 11);
-         int[,] massif = new int[strip, pillar];
-
-         void Print2DArrayInt(int[,] group)
+         int[,] massif = new int[strip, pillar];         void Print2DArrayInt(int[,] group)
          {
             int i = 0;
             while (i < group.GetLength(0))
