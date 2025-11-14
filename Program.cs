@@ -166,7 +166,6 @@ namespace WrongWriteCode
          int strip = selection.Next(2, 11);
          int pillar = selection.Next(2, 11);
          int[,] massif = new int[strip, pillar];
-
          // Метод заполнения массива
          void Complete2DArrayInt(int[,] panoply)
          {
