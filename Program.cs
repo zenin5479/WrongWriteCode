@@ -160,9 +160,9 @@ namespace WrongWriteCode
          ValueArrayInt(indexrow, indexcol, range);
 
          Random selection = new Random();
-         int line = selection.Next(2, 11);
-         int tower = selection.Next(2, 11);
-         int[,] masif = new int[line, tower];
+         int strip = selection.Next(2, 11);
+         int pillar = selection.Next(2, 11);
+         int[,] massif = new int[strip, pillar];
 
          Console.WriteLine("--------------------------------------------------------------------------------");
          Console.WriteLine("Cреднеарифметическое значение элементов столбцов, двумерного массива целых чисел");
@@ -173,13 +173,13 @@ namespace WrongWriteCode
             double average;
             Console.WriteLine("Среднеарифметическое столбцов:");
             int j = 0;
-            while (j < tower)
+            while (j < pillar)
             {
                double amount = 0;
                int i = 0;
-               while (i < line)
+               while (i < strip)
                {
-                  amount += masif[i, j];
+                  amount += massif[i, j];
                   i++;
                }
 
