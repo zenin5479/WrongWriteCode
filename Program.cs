@@ -171,14 +171,14 @@ namespace WrongWriteCode
          {
             int row = panoply.GetLength(0);
             int column = panoply.GetLength(1);
-            Random Stochastic = new Random();
+            Random stochastic = new Random();
             int i = 0;
             while (i < row)
             {
                int j = 0;
                while (j < column)
                {
-                  panoply[i, j] = Stochastic.Next(10, 100);
+                  panoply[i, j] = stochastic.Next(10, 100);
                   j++;
                }
 
