@@ -175,10 +175,15 @@ namespace WrongWriteCode
             int i = 0;
             while (i < row)
             {
-               
-               for (int j = 0; j < column; j++)
+               int j = 0;
+               while (j < column)
                {
                   panoply[i, j] = masiv.Next(10, 100);
+                  j++ ;
+               }
+               for ()
+               {
+                  
                }
                
                
