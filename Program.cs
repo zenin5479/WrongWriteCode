@@ -168,16 +168,16 @@ namespace WrongWriteCode
          int[,] massif = new int[strip, pillar];
 
          // Метод заполнения массива
-         void Complete2DArrayInt(int[,] Panoply)
+         void Complete2DArrayInt(int[,] panoply)
          {
-            int row = Panoply.GetLength(0);
-            int column = Panoply.GetLength(1);
+            int row = panoply.GetLength(0);
+            int column = panoply.GetLength(1);
             Random masif = new Random();
             for (int i = 0; i < row; i++)
             {
                for (int j = 0; j < column; j++)
                {
-                  Panoply[i, j] = masif.Next(-9, 8);
+                  panoply[i, j] = masif.Next(-9, 8);
                }
             }
          }
