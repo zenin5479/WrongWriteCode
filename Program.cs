@@ -168,7 +168,7 @@ namespace WrongWriteCode
          int[,] massif = new int[strip, pillar];
 
          // Метод заполнения массива
-         void Complete2DArray(int[,] matrix)
+         void Complete2DArrayInt(int[,] matrix)
          {
             int row = matrix.GetLength(0);
             int column = matrix.GetLength(1);
