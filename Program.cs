@@ -184,7 +184,7 @@ namespace WrongWriteCode
             }
          }
 
-         void AverageColumn2DArrayInt()
+         void AverageColumn2DArrayInt(int[,] series)
          {
             double average;
             Console.WriteLine("Среднеарифметическое столбцов:");
@@ -195,7 +195,7 @@ namespace WrongWriteCode
                int i = 0;
                while (i < strip)
                {
-                  amount += massif[i, j];
+                  amount += series[i, j];
                   i++;
                }
 
@@ -207,7 +207,7 @@ namespace WrongWriteCode
 
          Print2DArrayInt(massif);
 
-         AverageColumn2DArrayInt();
+         AverageColumn2DArrayInt(massif);
          Console.WriteLine();
 
          Console.WriteLine("----------------");
