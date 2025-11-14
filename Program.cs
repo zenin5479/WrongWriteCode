@@ -159,6 +159,11 @@ namespace WrongWriteCode
 
          ValueArrayInt(indexrow, indexcol, range);
 
+         Random Selection = new Random();
+         int line = Selection.Next(2, 11);
+         int tower = Selection.Next(2, 11);
+         int[,] range = new int[line, tower];
+
          Console.WriteLine("--------------------------------------------------------------------------------");
          Console.WriteLine("Cреднеарифметическое значение элементов столбцов, двумерного массива целых чисел");
          Console.WriteLine("--------------------------------------------------------------------------------");
