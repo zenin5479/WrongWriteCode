@@ -207,8 +207,6 @@ namespace WrongWriteCode
 
          Print2DArrayInt(massif);
 
-
-
          AverageColumn2DArrayInt();
          Console.WriteLine();
 
