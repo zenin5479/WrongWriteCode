@@ -183,7 +183,7 @@ namespace WrongWriteCode
                   i++;
                }
 
-               average = amount / line;
+               average = amount / strip;
                Console.Write("{0:f} ", average);
                j++;
             }
