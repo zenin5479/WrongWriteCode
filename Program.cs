@@ -171,23 +171,18 @@ namespace WrongWriteCode
          {
             int row = panoply.GetLength(0);
             int column = panoply.GetLength(1);
-            Random masiv = new Random();
+            Random Stochastic = new Random();
             int i = 0;
             while (i < row)
             {
                int j = 0;
                while (j < column)
                {
-                  panoply[i, j] = masiv.Next(10, 100);
-                  j++ ;
+                  panoply[i, j] = Stochastic.Next(10, 100);
+                  j++;
                }
-               
-               i++; 
-            }
-            
-            for ( )
-            {
-               
+
+               i++;
             }
          }
 
@@ -228,7 +223,7 @@ namespace WrongWriteCode
                j++;
             }
          }
-         
+
          Complete2DArrayInt(massif);
 
          Print2DArrayInt(massif);
