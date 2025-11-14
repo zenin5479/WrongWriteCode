@@ -159,9 +159,9 @@ namespace WrongWriteCode
 
          ValueArrayInt(indexrow, indexcol, range);
 
-         Random Selection = new Random();
-         int line = Selection.Next(2, 11);
-         int tower = Selection.Next(2, 11);
+         Random selection = new Random();
+         int line = selection.Next(2, 11);
+         int tower = selection.Next(2, 11);
          int[,] range = new int[line, tower];
 
          Console.WriteLine("--------------------------------------------------------------------------------");
