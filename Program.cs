@@ -170,17 +170,12 @@ namespace WrongWriteCode
          void Print2DArrayInt(int[,] mas)
          {
             int i = 0;
-
-            
-
-
-
             while (i < mas.GetLength(0))
             {
                int j = 0;
                while (j < mas.GetLength(1))
                {
-                  Console.Write("{0}  ", range[i, j]);
+                  Console.Write("{0}  ", massif[i, j]);
                   j++;
                }
 
