@@ -194,7 +194,7 @@ namespace WrongWriteCode
                int j = 0;
                while (j < group.GetLength(1))
                {
-                  Console.Write("{0}  ", group[i, j]);
+                  Console.Write("{0}\t", group[i, j]);
                   j++;
                }
 
@@ -206,7 +206,7 @@ namespace WrongWriteCode
          void AverageColumn2DArrayInt(int[,] series)
          {
             double average;
-            Console.WriteLine("Среднеарифметическое столбцов:");
+            Console.WriteLine("Среднеарифметическое значение элементов столбцов, двумерного массива целых чисел: ");
             int j = 0;
             while (j < pillar)
             {
@@ -219,7 +219,7 @@ namespace WrongWriteCode
                }
 
                average = amount / strip;
-               Console.Write("{0:f} ", average);
+               Console.Write("{0:f}\t", average);
                j++;
             }
          }
