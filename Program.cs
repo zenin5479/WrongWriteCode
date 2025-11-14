@@ -167,15 +167,15 @@ namespace WrongWriteCode
          int pillar = selection.Next(2, 11);
          int[,] massif = new int[strip, pillar];
 
-         void Print2DArrayInt(int[,] mas)
+         void Print2DArrayInt(int[,] group)
          {
             int i = 0;
-            while (i < mas.GetLength(0))
+            while (i < group.GetLength(0))
             {
                int j = 0;
-               while (j < mas.GetLength(1))
+               while (j < group.GetLength(1))
                {
-                  Console.Write("{0}  ", massif[i, j]);
+                  Console.Write("{0}  ", group[i, j]);
                   j++;
                }
 
