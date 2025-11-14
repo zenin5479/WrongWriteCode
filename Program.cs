@@ -170,7 +170,7 @@ namespace WrongWriteCode
          int pillar = selection.Next(2, 11);
          int[,] massif = new int[strip, pillar];
 
-         void PrintArrayInt(int[,] massif)
+         void Print2DArrayInt(int[,] mas)
          {
             int i = 0;
             while (i < line)
