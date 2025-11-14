@@ -172,17 +172,15 @@ namespace WrongWriteCode
          {
             int row = panoply.GetLength(0);
             int column = panoply.GetLength(1);
-            Random masif = new Random();
+            Random masiv = new Random();
             for (int i = 0; i < row; i++)
             {
                for (int j = 0; j < column; j++)
                {
-                  panoply[i, j] = masif.Next(-9, 8);
+                  panoply[i, j] = masiv.Next(-9, 8);
                }
             }
          }
-
-         
 
          void Print2DArrayInt(int[,] group)
          {
