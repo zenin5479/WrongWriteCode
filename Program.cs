@@ -162,7 +162,7 @@ namespace WrongWriteCode
          Random selection = new Random();
          int line = selection.Next(2, 11);
          int tower = selection.Next(2, 11);
-         int[,] range = new int[line, tower];
+         int[,] masif = new int[line, tower];
 
          Console.WriteLine("--------------------------------------------------------------------------------");
          Console.WriteLine("Cреднеарифметическое значение элементов столбцов, двумерного массива целых чисел");
@@ -179,7 +179,7 @@ namespace WrongWriteCode
                int i = 0;
                while (i < line)
                {
-                  amount += range[i, j];
+                  amount += masif[i, j];
                   i++;
                }
 
