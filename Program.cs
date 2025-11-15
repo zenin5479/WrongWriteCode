@@ -277,7 +277,18 @@ namespace WrongWriteCode
             int i = 0;
             while (i < a.GetLength(0))
             {
-               for (int j = 0; j < b.GetLength(1); j++)
+               int j = 0;
+               while (j < b.GetLength(1))
+               {
+                  
+                  
+                  
+                  
+                  j++;
+               }
+
+
+               for ( )
                {
                   for (int k = 0; k < b.GetLength(0); k++)
                   {
