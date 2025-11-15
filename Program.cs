@@ -273,7 +273,17 @@ namespace WrongWriteCode
             }
 
             int[,] outputs = new int[a.GetLength(0), b.GetLength(1)];
-            for (int i = 0; i < a.GetLength(0); i++)
+
+            int i = 0;
+            while (i < a.GetLength(0))
+            {
+
+
+
+               i++;
+            }
+
+            for ( )
             {
                for (int j = 0; j < b.GetLength(1); j++)
                {
