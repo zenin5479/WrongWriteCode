@@ -311,17 +311,10 @@ namespace WrongWriteCode
                   j++;
                }
 
-               i++;Console.WriteLine();
+               i++;
+               Console.WriteLine();
             }
-            for ( )
-            {
-               for ( )
-               {
-
-               }
-
-               
-            }
+           
          }
 
          Complete2DArray(matrixone);
