@@ -282,6 +282,11 @@ namespace WrongWriteCode
                {
                   
                   
+                  while ()
+                  {
+                     
+                  }
+                  
                   
                   
                   for (int k = 0; k < b.GetLength(0); k++)
