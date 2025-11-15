@@ -160,7 +160,7 @@ namespace WrongWriteCode
          ValueArrayInt(indexrow, indexcol, range);
 
          Console.WriteLine("--------------------------------------------------------------------------------");
-         Console.WriteLine("Cреднеарифметическое значение элементов столбцов, двумерного массива целых чисел");
+         Console.WriteLine("Cреднеарифметическое");
          Console.WriteLine("--------------------------------------------------------------------------------");
          Random selection = new Random();
          int strip = selection.Next(2, 11);
