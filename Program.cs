@@ -298,6 +298,18 @@ namespace WrongWriteCode
          // Метод вывода массива
          void Print2DArray(int[,] c)
          {
+            while ()
+            {
+
+               while ()
+               {
+                  
+               }
+
+
+            }
+            
+            
             for (int i = 0; i < c.GetLength(0); i++)
             {
                for (int j = 0; j < c.GetLength(1); j++)
