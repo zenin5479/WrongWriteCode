@@ -257,10 +257,7 @@ namespace WrongWriteCode
                   matrix[i, j] = casual.Next(-9, 8);
                   j++;
                }
-               for ()
-               {
-
-               }
+              
 
                i++;
             }
