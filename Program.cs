@@ -159,7 +159,7 @@ namespace WrongWriteCode
 
          ValueArrayInt(indexrow, indexcol, range);
 
-         Console.WriteLine("--------------------------------------------------------------------------------");
+         Console.WriteLine("--------------------");
          Console.WriteLine("Cреднеарифметическое");
          Console.WriteLine("--------------------------------------------------------------------------------");
          Random selection = new Random();
