@@ -273,7 +273,6 @@ namespace WrongWriteCode
             }
 
             int[,] outputs = new int[a.GetLength(0), b.GetLength(1)];
-
             int i = 0;
             while (i < a.GetLength(0))
             {
@@ -281,7 +280,6 @@ namespace WrongWriteCode
                while (j < b.GetLength(1))
                {
                   int k = 0;
-
                   while (k < b.GetLength(0))
                   {
                      outputs[i, j] += a[i, k] * b[k, j];
