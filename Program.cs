@@ -247,21 +247,18 @@ namespace WrongWriteCode
             int row = matrix.GetLength(0);
             int column = matrix.GetLength(1);
             Random casual = new Random();
-
             int i = 0;
             while (i < row)
             {
                int j = 0;
                while (j < column)
                {
-                  matrix[i, j] = casual.Next(-9, 8);
+                  matrix[i, j] = casual.Next(-9, 10);
                   j++;
                }
-              
 
                i++;
             }
-
          }
 
          // Метод перемножения матриц
