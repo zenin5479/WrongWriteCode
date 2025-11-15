@@ -338,7 +338,7 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < column; j++)
                {
-                  arrayy[i, j] = rand.Next(100, 9998);
+                  arrayy[i, j] = rand.Next(100, 10000);
                }
 
             }
@@ -357,8 +357,12 @@ namespace WrongWriteCode
                SumCount += num;
                MultCount *= num;
             }
-            if (SumCount > MultCount) return 1;
-            else return 0;
+            if (SumCount > MultCount)
+            {
+               return 1;
+            }
+
+            return 0;
          }
 
          // Метод  перевода элементов двумерного массива по условию задачи в одномерный
