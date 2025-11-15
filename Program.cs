@@ -161,7 +161,7 @@ namespace WrongWriteCode
 
          Console.WriteLine("--------------------");
          Console.WriteLine("Cреднеарифметическое");
-         Console.WriteLine("--------------------------------------------------------------------------------");
+         Console.WriteLine("--------------------");
          Random selection = new Random();
          int strip = selection.Next(2, 11);
          int pillar = selection.Next(2, 11);
