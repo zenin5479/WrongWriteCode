@@ -261,10 +261,6 @@ namespace WrongWriteCode
                i++;
             }
 
-            for (  )
-            {
-               
-            }
          }
 
          // Метод перемножения матриц
