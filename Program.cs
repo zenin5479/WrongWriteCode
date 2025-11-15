@@ -272,19 +272,19 @@ namespace WrongWriteCode
                }
             }
 
-            int[,] returns = new int[a.GetLength(0), b.GetLength(1)];
+            int[,] outputs = new int[a.GetLength(0), b.GetLength(1)];
             for (int i = 0; i < a.GetLength(0); i++)
             {
                for (int j = 0; j < b.GetLength(1); j++)
                {
                   for (int k = 0; k < b.GetLength(0); k++)
                   {
-                     returns[i, j] += a[i, k] * b[k, j];
+                     outputs[i, j] += a[i, k] * b[k, j];
                   }
                }
             }
 
-            return returns;
+            return outputs;
          }
 
          // Метод вывода массива
