@@ -247,12 +247,23 @@ namespace WrongWriteCode
             int row = matrix.GetLength(0);
             int column = matrix.GetLength(1);
             Random casual = new Random();
-            for (int i = 0; i < row; i++)
+
+            int i = 0;
+            while (i < row)
             {
+
+               
                for (int j = 0; j < column; j++)
                {
                   matrix[i, j] = casual.Next(-9, 8);
                }
+               
+               i++;
+            }
+
+            for (  )
+            {
+               
             }
          }
 
