@@ -285,17 +285,7 @@ namespace WrongWriteCode
                   while (k < b.GetLength(0))
                   {
                      outputs[i, j] += a[i, k] * b[k, j];
-                     
-                     
-                     
                      k++;
-                  }
-
-
-
-                  for ( )
-                  {
-                     
                   }
 
                   j++;
