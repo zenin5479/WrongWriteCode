@@ -289,11 +289,6 @@ namespace WrongWriteCode
                i++;
             }
 
-            for ( )
-            {
-
-            }
-
             return outputs;
          }
 
