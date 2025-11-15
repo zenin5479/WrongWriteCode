@@ -251,13 +251,19 @@ namespace WrongWriteCode
             int i = 0;
             while (i < row)
             {
-
-               
-               for (int j = 0; j < column; j++)
+               int j = 0;
+               while (j < column)
+               {
+                 
+                  
+                  
+                  j++;
+               }
+               for ()
                {
                   matrix[i, j] = casual.Next(-9, 8);
                }
-               
+
                i++;
             }
 
