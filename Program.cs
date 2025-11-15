@@ -254,14 +254,12 @@ namespace WrongWriteCode
                int j = 0;
                while (j < column)
                {
-                 
-                  
-                  
+                  matrix[i, j] = casual.Next(-9, 8);
                   j++;
                }
                for ()
                {
-                  matrix[i, j] = casual.Next(-9, 8);
+
                }
 
                i++;
