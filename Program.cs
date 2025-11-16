@@ -294,6 +294,7 @@ namespace WrongWriteCode
                i++;
             }
 
+            Console.WriteLine("Матрица С = А * В:");
             return outputs;
          }
 
