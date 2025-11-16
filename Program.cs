@@ -347,19 +347,19 @@ namespace WrongWriteCode
          }
 
          // Метод определяет больше ли сумма цифр или произведение цифр элемента массива
-         int CountNumTable2DInt(int Number)
+         int CountNumTable2DInt(int digit)
          {
-            int MultCount = 1;
-            int SumCount = 0;
+            int multCount = 1;
+            int sumCount = 0;
             int num = 0;
-            while (Number > 0)
+            while (digit > 0)
             {
-               num = Number - Number / 10 * 10;
-               Number = Number / 10;
-               SumCount += num;
-               MultCount *= num;
+               num = digit - digit / 10 * 10;
+               digit = digit / 10;
+               sumCount += num;
+               multCount *= num;
             }
-            if (SumCount > MultCount)
+            if (sumCount > multCount)
             {
                return 1;
             }
