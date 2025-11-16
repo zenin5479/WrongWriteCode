@@ -346,15 +346,17 @@ namespace WrongWriteCode
             int row = array2DInt.GetLength(0);
             int column = array2DInt.GetLength(1);
             Random rand = new Random();
-            
-            
-            for (int i = 0; i < row; i++)
+            int i = 0;
+            while (i < row)
             {
+
                for (int j = 0; j < column; j++)
                {
                   array2DInt[i, j] = rand.Next(100, 10000);
                }
 
+
+               i++;
             }
          }
 
