@@ -347,17 +347,20 @@ namespace WrongWriteCode
          }
 
          // Метод определяет больше ли сумма цифр или произведение цифр элемента массива
-         int CountNumTable2DInt(int digit)
+         // DefinesSumOrWorkNumbers
+
+
+         int DefinesSumOrWorkNumbers(int digit)
          {
             int multCount = 1;
             int sumCount = 0;
-            int Numeral;
+            int numeral;
             while (digit > 0)
             {
-               Numeral = digit - digit / 10 * 10;
+               numeral = digit - digit / 10 * 10;
                digit /= 10;
-               sumCount += Numeral;
-               multCount *= Numeral;
+               sumCount += numeral;
+               multCount *= numeral;
             }
 
             if (sumCount > multCount)
@@ -368,7 +371,7 @@ namespace WrongWriteCode
             return 0;
          }
 
-         // Метод  перевода элементов двумерного массива по условию задачи в одномерный
+         // Метод перевода элементов двумерного массива по условию задачи в одномерный
          void NumberTable2DInt()
          {
             int row = array2DInt.GetLength(0);
@@ -379,7 +382,7 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < column; j++)
                {
-                  if (CountNumTable2DInt(array2DInt[i, j]) == 1) count++;
+                  if (DefinesSumOrWorkNumbers(array2DInt[i, j]) == 1) count++;
                }
             }
             if (count != 0)
@@ -390,7 +393,7 @@ namespace WrongWriteCode
                {
                   for (int j = 0; j < column; j++)
                   {
-                     if (CountNumTable2DInt(array2DInt[i, j]) == 1)
+                     if (DefinesSumOrWorkNumbers(array2DInt[i, j]) == 1)
                      {
                         array[m] = array2DInt[i, j];
                         Console.Write(array[m] + "  ");
