@@ -272,7 +272,6 @@ namespace WrongWriteCode
             if (a.GetLength(1) != b.GetLength(0))
             {
                outputs = new int[0, 0];
-               //Console.WriteLine("Матрицы нельзя перемножить");
             }
             else
             {
