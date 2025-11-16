@@ -417,7 +417,7 @@ namespace WrongWriteCode
          }
 
          FillArrayy();
-         Console.WriteLine("Двумервый массив");
+         Console.WriteLine("Двумерный массив");
          PrintArrayy();
          Console.WriteLine("Одномерный массив по условию задачи");
          NumberArray();
