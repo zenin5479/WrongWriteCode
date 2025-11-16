@@ -410,11 +410,12 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < column; j++)
                {
-                  Console.Write(" {0}  ", arrayy[i, j]);
+                  Console.Write("{0:f}\t", arrayy[i, j]);
                }
                Console.WriteLine();
             }
          }
+
          FillArrayy();
          Console.WriteLine("Двумернвый массив");
          PrintArrayy();
