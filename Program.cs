@@ -351,14 +351,15 @@ namespace WrongWriteCode
          {
             int multCount = 1;
             int sumCount = 0;
-            int num;
+            int Numeral;
             while (digit > 0)
             {
-               num = digit - digit / 10 * 10;
+               Numeral = digit - digit / 10 * 10;
                digit /= 10;
-               sumCount += num;
-               multCount *= num;
+               sumCount += Numeral;
+               multCount *= Numeral;
             }
+
             if (sumCount > multCount)
             {
                return 1;
