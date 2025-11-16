@@ -351,7 +351,7 @@ namespace WrongWriteCode
          {
             int multCount = 1;
             int sumCount = 0;
-            int num = 0;
+            int num;
             while (digit > 0)
             {
                num = digit - digit / 10 * 10;
