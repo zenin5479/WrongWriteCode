@@ -389,7 +389,10 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < columns; j++)
                {
-                  if (DefinesSumOrWorkNumbers(array2DInt[i, j]) == 1) count++;
+                  if (DefinesSumOrWorkNumbers(array2DInt[i, j]) == 1)
+                  {
+                     count++;
+                  }
                }
             }
 
