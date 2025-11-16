@@ -235,11 +235,11 @@ namespace WrongWriteCode
          Console.WriteLine("Умножение матриц");
          Console.WriteLine("----------------");
          Random probabilistic = new Random();
-         int rowone = probabilistic.Next(3, 4);
-         int colone = probabilistic.Next(3, 4);
+         int rowone = probabilistic.Next(3, 5);
+         int colone = probabilistic.Next(3, 5);
          int[,] matrixone = new int[rowone, colone];
-         int rowtwo = probabilistic.Next(3, 4);
-         int coltwo = probabilistic.Next(3, 4);
+         int rowtwo = probabilistic.Next(3, 5);
+         int coltwo = probabilistic.Next(3, 5);
          int[,] matrixtwo = new int[rowtwo, coltwo];
          // Метод заполнения массива
          void Complete2DArray(int[,] matrix)
