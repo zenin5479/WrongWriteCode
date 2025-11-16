@@ -382,6 +382,7 @@ namespace WrongWriteCode
                   if (DefinesSumOrWorkNumbers(array2DInt[i, j]) == 1) count++;
                }
             }
+
             if (count != 0)
             {
                int[] array = new int[count];
