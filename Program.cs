@@ -369,10 +369,10 @@ namespace WrongWriteCode
          }
 
          // Метод перевода элементов двумерного массива по условию задачи в одномерный
-         // Converting2DTableTo1DTable
+        
 
 
-         void NumberTable2DInt()
+         void Converting2DTableTo1DTable()
          {
             int row = array2DInt.GetLength(0);
             int column = array2DInt.GetLength(1);
@@ -424,7 +424,7 @@ namespace WrongWriteCode
          Console.WriteLine("Двумерный массив");
          PrintTable();
          Console.WriteLine("Одномерный массив по условию задачи");
-         NumberTable2DInt();
+         Converting2DTableTo1DTable();
 
          int[,] griddes = new int[5, 5];
          Random rnd = new Random();
