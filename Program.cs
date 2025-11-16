@@ -264,7 +264,7 @@ namespace WrongWriteCode
          // Метод перемножения матриц
          int[,] Multiplication(int[,] a, int[,] b)
          {
-            if (a.GetLength(1) != b.GetLength(0) && a.GetLength(1) != b.GetLength(0))
+            if (a.GetLength(1) != b.GetLength(0) && a.GetLength(0) != b.GetLength(1))
             {
 
                Console.WriteLine("Матрицы нельзя перемножить");
