@@ -332,7 +332,6 @@ namespace WrongWriteCode
          Print2DArray(matrixone);
          Console.WriteLine("Матрица B:");
          Print2DArray(matrixtwo);
-         //Console.WriteLine("Матрица С = А * В:");
          int[,] matrixthree = Multiplication(matrixone, matrixtwo);
          Print2DArray(matrixthree);
 
