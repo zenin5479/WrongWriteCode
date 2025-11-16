@@ -369,18 +369,15 @@ namespace WrongWriteCode
          }
 
          // Метод перевода элементов двумерного массива по условию задачи в одномерный
-        
-
-
          void Converting2DTableTo1DTable()
          {
-            int row = array2DInt.GetLength(0);
-            int column = array2DInt.GetLength(1);
+            int rows = array2DInt.GetLength(0);
+            int columns = array2DInt.GetLength(1);
             int count = 0;
-            int m = 0;
-            for (int i = 0; i < row; i++)
+            int row = 0;
+            for (int i = 0; i < rows; i++)
             {
-               for (int j = 0; j < column; j++)
+               for (int j = 0; j < columns; j++)
                {
                   if (DefinesSumOrWorkNumbers(array2DInt[i, j]) == 1) count++;
                }
@@ -389,15 +386,15 @@ namespace WrongWriteCode
             {
                int[] array = new int[count];
 
-               for (int i = 0; i < row; i++)
+               for (int i = 0; i < rows; i++)
                {
-                  for (int j = 0; j < column; j++)
+                  for (int j = 0; j < columns; j++)
                   {
                      if (DefinesSumOrWorkNumbers(array2DInt[i, j]) == 1)
                      {
-                        array[m] = array2DInt[i, j];
-                        Console.Write(array[m] + "  ");
-                        m++;
+                        array[row] = array2DInt[i, j];
+                        Console.Write(array[row] + "  ");
+                        row++;
                      }
                   }
                }
