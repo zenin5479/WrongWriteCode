@@ -437,7 +437,7 @@ namespace WrongWriteCode
          FillTable2DInt();
          Console.WriteLine("Двумерный массив");
          PrintTable();
-         Console.WriteLine("Одномерный массив по условию задачи");
+         Console.WriteLine("Одномерный массив элементов, сумма цифр которых превышает их произведение");
          Converting2DTableTo1DTable();
 
          int[,] griddes = new int[5, 5];
