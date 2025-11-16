@@ -333,8 +333,8 @@ namespace WrongWriteCode
          Console.WriteLine("Матрица B:");
          Print2DArray(matrixtwo);
          //Console.WriteLine("Матрица С = А * В:");
-         int[,] yu = Multiplication(matrixone, matrixtwo);
-         Print2DArray(yu);
+         int[,] matrixthree = Multiplication(matrixone, matrixtwo);
+         Print2DArray(matrixthree);
 
          Console.WriteLine("---------------------------------------------------------------------------------------------------");
          Console.WriteLine("Поиск элементов в двумерном целочисленном массиве, для которых сумма цифр превышает их произведение");
