@@ -306,7 +306,7 @@ namespace WrongWriteCode
                int j = 0;
                while (j < c.GetLength(1))
                {
-                  Console.Write("{0} ", c[i, j]);
+                  Console.Write("{0:f}\t", c[i, j]);
                   j++;
                }
 
