@@ -346,6 +346,8 @@ namespace WrongWriteCode
             int row = array2DInt.GetLength(0);
             int column = array2DInt.GetLength(1);
             Random rand = new Random();
+            
+            
             for (int i = 0; i < row; i++)
             {
                for (int j = 0; j < column; j++)
