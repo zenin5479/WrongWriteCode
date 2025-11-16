@@ -345,23 +345,16 @@ namespace WrongWriteCode
          {
             int row = array2DInt.GetLength(0);
             int column = array2DInt.GetLength(1);
-            Random rand = new Random();
+            Random chance = new Random();
             int i = 0;
             while (i < row)
             {
                int j = 0;
                while (j < column)
                {
-
-
-
+                  array2DInt[i, j] = chance.Next(100, 10000);
                   j++;
                }
-               for ( )
-               {
-                  array2DInt[i, j] = rand.Next(100, 10000);
-               }
-
 
                i++;
             }
