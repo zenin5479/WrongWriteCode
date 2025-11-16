@@ -368,7 +368,7 @@ namespace WrongWriteCode
          }
 
          // Метод  перевода элементов двумерного массива по условию задачи в одномерный
-         void NumberArray2DInt()
+         void NumberTable2DInt()
          {
             int row = array2DInt.GetLength(0);
             int column = array2DInt.GetLength(1);
@@ -402,7 +402,7 @@ namespace WrongWriteCode
          }
 
          // Метод вывода массива
-         void PrintArray2DInt()
+         void PrintTable()
          {
             int row = array2DInt.GetLength(0);
             int column = array2DInt.GetLength(1);
@@ -418,9 +418,9 @@ namespace WrongWriteCode
 
          FillArray2DInt();
          Console.WriteLine("Двумерный массив");
-         PrintArray2DInt();
+         PrintTable();
          Console.WriteLine("Одномерный массив по условию задачи");
-         NumberArray2DInt();
+         NumberTable2DInt();
 
          int[,] griddes = new int[5, 5];
          Random rnd = new Random();
