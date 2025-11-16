@@ -269,11 +269,7 @@ namespace WrongWriteCode
             // Ошибка при несовместимости:
             // если n не совпадает, возникнет ошибка
             int[,] outputs;
-            if (a.GetLength(1) != b.GetLength(0))
-            {
-               outputs = new int[0, 0];
-            }
-            else
+            if (a.GetLength(1) == b.GetLength(0))
             {
                outputs = new int[a.GetLength(0), b.GetLength(1)];
                int i = 0;
@@ -296,6 +292,10 @@ namespace WrongWriteCode
                }
 
                Console.WriteLine("Матрица С = А * В:");
+            }
+            else
+            {
+               outputs = new int[0, 0];
             }
 
             return outputs;
