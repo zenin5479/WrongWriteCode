@@ -268,10 +268,11 @@ namespace WrongWriteCode
             // если матрица A имеет размер m × n, а матрица B — n × k, то результирующая матрица будет m × k
             // Ошибка при несовместимости:
             // если n не совпадает, возникнет ошибка
-            int[,] outputs = { };
+            int[,] outputs;
             if (a.GetLength(1) != b.GetLength(0))
             {
-               Console.WriteLine("Матрицы нельзя перемножить");
+               outputs = new int[0, 0];
+               //Console.WriteLine("Матрицы нельзя перемножить");
             }
             else
             {
@@ -310,7 +311,6 @@ namespace WrongWriteCode
             }
             else
             {
-
                int i = 0;
                while (i < c.GetLength(0))
                {
@@ -324,10 +324,7 @@ namespace WrongWriteCode
                   i++;
                   Console.WriteLine();
                }
-
             }
-
-
          }
 
          Complete2DArray(matrixone);
