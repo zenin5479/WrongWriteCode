@@ -355,7 +355,7 @@ namespace WrongWriteCode
             while (digit > 0)
             {
                num = digit - digit / 10 * 10;
-               digit = digit / 10;
+               digit /= 10;
                sumCount += num;
                multCount *= num;
             }
