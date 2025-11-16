@@ -349,8 +349,15 @@ namespace WrongWriteCode
             int i = 0;
             while (i < row)
             {
+               int j = 0;
+               while (j < column)
+               {
 
-               for (int j = 0; j < column; j++)
+
+
+                  j++;
+               }
+               for ( )
                {
                   array2DInt[i, j] = rand.Next(100, 10000);
                }
