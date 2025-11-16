@@ -269,8 +269,6 @@ namespace WrongWriteCode
             // Ошибка при несовместимости:
             // если n не совпадает, возникнет ошибка
             int[,] outputs = { };
-
-
             if (a.GetLength(1) != b.GetLength(0))
             {
                Console.WriteLine("Матрицы нельзя перемножить");
