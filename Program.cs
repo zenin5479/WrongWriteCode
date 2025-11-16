@@ -304,19 +304,30 @@ namespace WrongWriteCode
          // Метод вывода массива
          void Print2DArray(int[,] c)
          {
-            int i = 0;
-            while (i < c.GetLength(0))
+            if (c.GetLength(0) != 0 && c.GetLength(1) != 0)
             {
-               int j = 0;
-               while (j < c.GetLength(1))
+               Console.WriteLine("Матрицы нельзя перемножить");
+            }
+            else
+            {
+
+               int i = 0;
+               while (i < c.GetLength(0))
                {
-                  Console.Write("{0}\t", c[i, j]);
-                  j++;
+                  int j = 0;
+                  while (j < c.GetLength(1))
+                  {
+                     Console.Write("{0}\t", c[i, j]);
+                     j++;
+                  }
+
+                  i++;
+                  Console.WriteLine();
                }
 
-               i++;
-               Console.WriteLine();
             }
+
+
          }
 
          Complete2DArray(matrixone);
