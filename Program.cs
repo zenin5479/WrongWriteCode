@@ -328,19 +328,19 @@ namespace WrongWriteCode
          Console.WriteLine("---------------------------------------------------------------------------------------------------");
          Console.WriteLine("Поиск элементов в двумерном целочисленном массиве, для которых сумма цифр превышает их произведение");
          Console.WriteLine("---------------------------------------------------------------------------------------------------");
-         int[,] arrayy = new int[3, 4];
+         int[,] array2DInt = new int[3, 4];
 
          // Метод заполнения двумерного массива
          void FillArrayy()
          {
-            int row = arrayy.GetLength(0);
-            int column = arrayy.GetLength(1);
+            int row = array2DInt.GetLength(0);
+            int column = array2DInt.GetLength(1);
             Random rand = new Random();
             for (int i = 0; i < row; i++)
             {
                for (int j = 0; j < column; j++)
                {
-                  arrayy[i, j] = rand.Next(100, 10000);
+                  array2DInt[i, j] = rand.Next(100, 10000);
                }
 
             }
@@ -370,15 +370,15 @@ namespace WrongWriteCode
          // Метод  перевода элементов двумерного массива по условию задачи в одномерный
          void NumberArray()
          {
-            int row = arrayy.GetLength(0);
-            int column = arrayy.GetLength(1);
+            int row = array2DInt.GetLength(0);
+            int column = array2DInt.GetLength(1);
             int count = 0;
             int m = 0;
             for (int i = 0; i < row; i++)
             {
                for (int j = 0; j < column; j++)
                {
-                  if (CountNumArray(arrayy[i, j]) == 1) count++;
+                  if (CountNumArray(array2DInt[i, j]) == 1) count++;
                }
             }
             if (count != 0)
@@ -389,9 +389,9 @@ namespace WrongWriteCode
                {
                   for (int j = 0; j < column; j++)
                   {
-                     if (CountNumArray(arrayy[i, j]) == 1)
+                     if (CountNumArray(array2DInt[i, j]) == 1)
                      {
-                        array[m] = arrayy[i, j];
+                        array[m] = array2DInt[i, j];
                         Console.Write(array[m] + "  ");
                         m++;
                      }
@@ -404,13 +404,13 @@ namespace WrongWriteCode
          // Метод вывода массива
          void PrintArrayy()
          {
-            int row = arrayy.GetLength(0);
-            int column = arrayy.GetLength(1);
+            int row = array2DInt.GetLength(0);
+            int column = array2DInt.GetLength(1);
             for (int i = 0; i < row; i++)
             {
                for (int j = 0; j < column; j++)
                {
-                  Console.Write("{0}\t", arrayy[i, j]);
+                  Console.Write("{0}\t", array2DInt[i, j]);
                }
                Console.WriteLine();
             }
