@@ -331,7 +331,7 @@ namespace WrongWriteCode
          int[,] array2DInt = new int[3, 4];
 
          // Метод заполнения двумерного массива
-         void FillArray2DInt()
+         void FillTable2DInt()
          {
             int row = array2DInt.GetLength(0);
             int column = array2DInt.GetLength(1);
@@ -347,7 +347,7 @@ namespace WrongWriteCode
          }
 
          // Метод определяет больше ли сумма цифр или произведение цифр элемента массива
-         int CountNumArray2DInt(int Number)
+         int CountNumTable2DInt(int Number)
          {
             int MultCount = 1;
             int SumCount = 0;
@@ -378,7 +378,7 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < column; j++)
                {
-                  if (CountNumArray2DInt(array2DInt[i, j]) == 1) count++;
+                  if (CountNumTable2DInt(array2DInt[i, j]) == 1) count++;
                }
             }
             if (count != 0)
@@ -389,7 +389,7 @@ namespace WrongWriteCode
                {
                   for (int j = 0; j < column; j++)
                   {
-                     if (CountNumArray2DInt(array2DInt[i, j]) == 1)
+                     if (CountNumTable2DInt(array2DInt[i, j]) == 1)
                      {
                         array[m] = array2DInt[i, j];
                         Console.Write(array[m] + "  ");
@@ -416,7 +416,7 @@ namespace WrongWriteCode
             }
          }
 
-         FillArray2DInt();
+         FillTable2DInt();
          Console.WriteLine("Двумерный массив");
          PrintTable();
          Console.WriteLine("Одномерный массив по условию задачи");
