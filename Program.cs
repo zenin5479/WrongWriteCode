@@ -268,33 +268,38 @@ namespace WrongWriteCode
             // если матрица A имеет размер m × n, а матрица B — n × k, то результирующая матрица будет m × k
             // Ошибка при несовместимости:
             // если n не совпадает, возникнет ошибка
+            int[,] outputs = { };
+
 
             if (a.GetLength(1) != b.GetLength(0))
             {
                Console.WriteLine("Матрицы нельзя перемножить");
             }
-
-            int[,] outputs = new int[a.GetLength(0), b.GetLength(1)];
-            int i = 0;
-            while (i < a.GetLength(0))
+            else
             {
-               int j = 0;
-               while (j < b.GetLength(1))
+               outputs = new int[a.GetLength(0), b.GetLength(1)];
+               int i = 0;
+               while (i < a.GetLength(0))
                {
-                  int k = 0;
-                  while (k < b.GetLength(0))
+                  int j = 0;
+                  while (j < b.GetLength(1))
                   {
-                     outputs[i, j] += a[i, k] * b[k, j];
-                     k++;
+                     int k = 0;
+                     while (k < b.GetLength(0))
+                     {
+                        outputs[i, j] += a[i, k] * b[k, j];
+                        k++;
+                     }
+
+                     j++;
                   }
 
-                  j++;
+                  i++;
                }
 
-               i++;
+               Console.WriteLine("Матрица С = А * В:");
             }
 
-            Console.WriteLine("Матрица С = А * В:");
             return outputs;
          }
 
