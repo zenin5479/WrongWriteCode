@@ -410,14 +410,14 @@ namespace WrongWriteCode
             {
                for (int j = 0; j < column; j++)
                {
-                  Console.Write("{0:f}\t", arrayy[i, j]);
+                  Console.Write("{0}\t", arrayy[i, j]);
                }
                Console.WriteLine();
             }
          }
 
          FillArrayy();
-         Console.WriteLine("Двумернвый массив");
+         Console.WriteLine("Двумервый массив");
          PrintArrayy();
          Console.WriteLine("Одномерный массив по условию задачи");
          NumberArray();
