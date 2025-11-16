@@ -347,9 +347,6 @@ namespace WrongWriteCode
          }
 
          // Метод определяет больше ли сумма цифр или произведение цифр элемента массива
-         // DefinesSumOrWorkNumbers
-
-
          int DefinesSumOrWorkNumbers(int digit)
          {
             int multCount = 1;
@@ -372,6 +369,9 @@ namespace WrongWriteCode
          }
 
          // Метод перевода элементов двумерного массива по условию задачи в одномерный
+         // Converting2DTableTo1DTable
+
+
          void NumberTable2DInt()
          {
             int row = array2DInt.GetLength(0);
