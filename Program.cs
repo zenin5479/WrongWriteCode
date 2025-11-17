@@ -409,9 +409,11 @@ namespace WrongWriteCode
             if (count != 0)
             {
                int[] array = new int[count];
-
-               for (int k = 0; k < rows; k++)
+               int k = 0;
+               while (k < rows)
                {
+
+
                   for (int l = 0; l < columns; l++)
                   {
                      if (DefinesSumOrWorkNumbers(array2DInt[k, l]) == 1)
@@ -421,6 +423,8 @@ namespace WrongWriteCode
                         row++;
                      }
                   }
+
+                  k++;
                }
 
                Console.WriteLine();
@@ -456,7 +460,7 @@ namespace WrongWriteCode
          PrintTable();
          Console.WriteLine("Одномерный массив элементов, сумма цифр которых превышает их произведение");
          Converting2DTableTo1DTable();
-         
+
          Console.WriteLine("--------------------------------------------");
          Console.WriteLine("Проверка существования пути из точки в точку");
          Console.WriteLine("--------------------------------------------");
