@@ -412,9 +412,8 @@ namespace WrongWriteCode
                int k = 0;
                while (k < rows)
                {
-
-
-                  for (int l = 0; l < columns; l++)
+                  int l = 0;
+                  while (l < columns)
                   {
                      if (DefinesSumOrWorkNumbers(array2DInt[k, l]) == 1)
                      {
@@ -422,6 +421,13 @@ namespace WrongWriteCode
                         Console.Write(array[row] + "  ");
                         row++;
                      }
+
+                     l++;
+                  }
+
+
+                  for ( )
+                  {
                   }
 
                   k++;
