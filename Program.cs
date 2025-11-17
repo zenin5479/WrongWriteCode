@@ -350,7 +350,7 @@ namespace WrongWriteCode
             while (i < row)
             {
                int j = 0;
-               while (j < column)
+               while (j < col)
                {
                   array2DInt[i, j] = chance.Next(100, 10000);
                   j++;
