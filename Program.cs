@@ -426,9 +426,6 @@ namespace WrongWriteCode
                   }
 
 
-                  for ( )
-                  {
-                  }
 
                   k++;
                }
