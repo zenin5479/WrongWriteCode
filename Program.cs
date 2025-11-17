@@ -469,12 +469,24 @@ namespace WrongWriteCode
          Random arbitrary = new Random();
 
          // Заполняем массив случайными 0 и 1
-         for (int i = 0; i < 5; i++)
+         int p = 0;
+         while (p < 5)
          {
-            for (int j = 0; j < 5; j++)
+
+            while ()
             {
-               vector[i, j] = arbitrary.Next(2);
+               
             }
+            for (int t = 0; t < 5; t++)
+            {
+               vector[p, t] = arbitrary.Next(2);
+            }
+
+            p++;
+         }
+         for (  )
+         {
+
          }
 
          // Принудительно задаем старт и финиш единицами
