@@ -458,7 +458,7 @@ namespace WrongWriteCode
          Console.WriteLine("--------------------------------------------");
          Console.WriteLine("Проверка существования пути из точки в точку");
          Console.WriteLine("--------------------------------------------");
-         int[,] griddes = new int[5, 5];
+         int[,] vector = new int[5, 5];
          Random rnd = new Random();
 
          // Заполняем массив случайными 0 и 1
@@ -466,13 +466,13 @@ namespace WrongWriteCode
          {
             for (int j = 0; j < 5; j++)
             {
-               griddes[i, j] = rnd.Next(2);
+               vector[i, j] = rnd.Next(2);
             }
          }
 
          // Принудительно задаем старт и финиш единицами
-         griddes[0, 0] = 1;
-         griddes[4, 4] = 1;
+         vector[0, 0] = 1;
+         vector[4, 4] = 1;
          Console.WriteLine();
          // Выводим массив для наглядности
          Console.WriteLine("Массив:");
@@ -480,13 +480,13 @@ namespace WrongWriteCode
          {
             for (int j = 0; j < 5; j++)
             {
-               Console.Write(griddes[i, j] + " ");
+               Console.Write(vector[i, j] + " ");
             }
             Console.WriteLine();
          }
 
          // Проверяем путь
-         bool hasPath = CheckPath(griddes);
+         bool hasPath = CheckPath(vector);
          Console.WriteLine(hasPath ? "Путь существует!" : "Путь не существует");
 
          const int size = 5;
