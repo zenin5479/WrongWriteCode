@@ -498,7 +498,14 @@ namespace WrongWriteCode
 
          // Проверяем путь
          bool hasPath = CheckPath(vector);
-         Console.WriteLine(hasPath ? "Путь существует!" : "Путь не существует");
+         if (hasPath)
+         {
+            Console.WriteLine("Путь существует!");
+         }
+         else
+         {
+            Console.WriteLine("Путь не существует");
+         }
 
          Console.ReadLine();
       }
