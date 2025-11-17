@@ -433,10 +433,11 @@ namespace WrongWriteCode
          void PrintTable()
          {
             int row = array2DInt.GetLength(0);
-            int column = array2DInt.GetLength(1);
+            int col = array2DInt.GetLength(1);
+            
             for (int i = 0; i < row; i++)
             {
-               for (int j = 0; j < column; j++)
+               for (int j = 0; j < col; j++)
                {
                   Console.Write("{0}\t", array2DInt[i, j]);
                }
