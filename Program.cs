@@ -484,7 +484,7 @@ namespace WrongWriteCode
          // Задаем старт и финиш единицами
          vector[0, 0] = 1;
          vector[4, 4] = 1;
-         Console.WriteLine();
+
          // Выводим массив
          Console.WriteLine("Массив:");
          for (int i = 0; i < 5; i++)
