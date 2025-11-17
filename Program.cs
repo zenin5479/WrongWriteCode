@@ -440,9 +440,7 @@ namespace WrongWriteCode
                int j = 0;
                while (j < col)
                {
-                  
                   Console.Write("{0}\t", array2DInt[i, j]);
-                  
                   j++;
                }
 
