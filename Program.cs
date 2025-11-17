@@ -422,6 +422,8 @@ namespace WrongWriteCode
                      }
                   }
                }
+
+               Console.WriteLine();
             }
             else
             {
