@@ -434,8 +434,13 @@ namespace WrongWriteCode
          {
             int row = array2DInt.GetLength(0);
             int col = array2DInt.GetLength(1);
-            
-            for (int i = 0; i < row; i++)
+            int i = 0;
+            while (i < row)
+            {
+               
+               i++;
+            }
+            for ()
             {
                for (int j = 0; j < col; j++)
                {
