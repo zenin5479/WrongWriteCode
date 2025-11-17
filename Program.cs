@@ -549,7 +549,6 @@ namespace WrongWriteCode
             return false;
          }
 
-
          // Проверяем путь
          bool hasPath = CheckPath(vector);
          if (hasPath)
@@ -563,7 +562,5 @@ namespace WrongWriteCode
 
          Console.ReadLine();
       }
-
-
    }
 }
