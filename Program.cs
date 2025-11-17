@@ -344,7 +344,7 @@ namespace WrongWriteCode
          void FillTable2DInt()
          {
             int row = array2DInt.GetLength(0);
-            int column = array2DInt.GetLength(1);
+            int col = array2DInt.GetLength(1);
             Random chance = new Random();
             int i = 0;
             while (i < row)
