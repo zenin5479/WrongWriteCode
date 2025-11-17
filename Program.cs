@@ -437,11 +437,15 @@ namespace WrongWriteCode
             int i = 0;
             while (i < row)
             {
-
-               for (int j = 0; j < col; j++)
+               int j = 0;
+               while (j < col)
                {
+                  
                   Console.Write("{0}\t", array2DInt[i, j]);
+                  
+                  j++;
                }
+
                Console.WriteLine();
                i++;
             }
