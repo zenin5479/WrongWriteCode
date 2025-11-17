@@ -389,7 +389,8 @@ namespace WrongWriteCode
             int columns = array2DInt.GetLength(1);
             int count = 0;
             int row = 0;
-            for (int i = 0; i < rows; i++)
+            int i = 0;
+            while (i < rows)
             {
                for (int j = 0; j < columns; j++)
                {
@@ -398,6 +399,15 @@ namespace WrongWriteCode
                      count++;
                   }
                }
+               
+               
+               i++;
+            }
+            
+            
+            for ()
+            {
+               
             }
 
             if (count != 0)
