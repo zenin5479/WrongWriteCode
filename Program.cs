@@ -500,31 +500,6 @@ namespace WrongWriteCode
          bool hasPath = CheckPath(vector);
          Console.WriteLine(hasPath ? "Путь существует!" : "Путь не существует");
 
-         const int size = 5;
-         int[,] gridis = new int[size, size];
-         Random rand = new Random();
-
-         // Заполняем массив случайными 0 и 1
-         for (int i = 0; i < size; i++)
-         {
-            for (int j = 0; j < size; j++)
-            {
-               gridis[i, j] = rand.Next(2); // 0 или 1
-            }
-         }
-
-         // Принудительно ставим 1 в стартовой и конечной точках
-         gridis[0, 0] = 1;
-         gridis[size - 1, size - 1] = 1;
-
-         // Выводим массив для наглядности
-         Console.WriteLine("Сгенерированный массив:");
-         PrintGrid(gridis);
-
-         // Проверяем наличие пути
-         bool path = HasPath(gridis);
-         Console.WriteLine(path ? "Путь существует!" : "Пути нет!");
-
          Console.ReadLine();
       }
 
