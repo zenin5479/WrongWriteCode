@@ -458,8 +458,6 @@ namespace WrongWriteCode
          Console.WriteLine("--------------------------------------------");
          Console.WriteLine("Проверка существования пути из точки в точку");
          Console.WriteLine("--------------------------------------------");
-
-
          int[,] griddes = new int[5, 5];
          Random rnd = new Random();
 
