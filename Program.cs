@@ -414,13 +414,13 @@ namespace WrongWriteCode
             {
                int[] array = new int[count];
 
-               for (int i = 0; i < rows; i++)
+               for (int k = 0; k < rows; k++)
                {
-                  for (int j = 0; j < columns; j++)
+                  for (int l = 0; l < columns; l++)
                   {
-                     if (DefinesSumOrWorkNumbers(array2DInt[i, j]) == 1)
+                     if (DefinesSumOrWorkNumbers(array2DInt[k, l]) == 1)
                      {
-                        array[row] = array2DInt[i, j];
+                        array[row] = array2DInt[k, l];
                         Console.Write(array[row] + "  ");
                         row++;
                      }
