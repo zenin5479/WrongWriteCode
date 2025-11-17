@@ -467,7 +467,6 @@ namespace WrongWriteCode
          Console.WriteLine("--------------------------------------------");
          int[,] vector = new int[5, 5];
          Random arbitrary = new Random();
-
          // Заполняем массив случайными 0 и 1
          int p = 0;
          while (p < 5)
@@ -479,17 +478,7 @@ namespace WrongWriteCode
                t++;
             }
 
-
-            for ()
-            {
-
-            }
-
             p++;
-         }
-         for (  )
-         {
-
          }
 
          // Принудительно задаем старт и финиш единицами
