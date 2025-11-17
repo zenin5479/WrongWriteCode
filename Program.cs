@@ -466,14 +466,14 @@ namespace WrongWriteCode
          Console.WriteLine("Проверка существования пути из точки в точку");
          Console.WriteLine("--------------------------------------------");
          int[,] vector = new int[5, 5];
-         Random rnd = new Random();
+         Random arbitrary = new Random();
 
          // Заполняем массив случайными 0 и 1
          for (int i = 0; i < 5; i++)
          {
             for (int j = 0; j < 5; j++)
             {
-               vector[i, j] = rnd.Next(2);
+               vector[i, j] = arbitrary.Next(2);
             }
          }
 
