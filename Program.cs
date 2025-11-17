@@ -444,9 +444,9 @@ namespace WrongWriteCode
                   j++;
                }
 
-                i++;
+               i++;
                Console.WriteLine();
-              
+
             }
          }
 
