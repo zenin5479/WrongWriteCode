@@ -425,8 +425,6 @@ namespace WrongWriteCode
                      l++;
                   }
 
-
-
                   k++;
                }
 
