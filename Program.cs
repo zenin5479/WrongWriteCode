@@ -403,12 +403,6 @@ namespace WrongWriteCode
                
                i++;
             }
-            
-            
-            for ()
-            {
-               
-            }
 
             if (count != 0)
             {
