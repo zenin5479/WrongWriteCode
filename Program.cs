@@ -472,14 +472,17 @@ namespace WrongWriteCode
          int p = 0;
          while (p < 5)
          {
-
-            while ()
-            {
-               
-            }
-            for (int t = 0; t < 5; t++)
+            int t = 0;
+            while (t < 5)
             {
                vector[p, t] = arbitrary.Next(2);
+               t++;
+            }
+
+
+            for ()
+            {
+
             }
 
             p++;
