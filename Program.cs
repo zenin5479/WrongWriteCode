@@ -392,15 +392,22 @@ namespace WrongWriteCode
             int i = 0;
             while (i < rows)
             {
-               for (int j = 0; j < columns; j++)
+               int j = 0;
+               while (j < columns)
                {
                   if (DefinesSumOrWorkNumbers(array2DInt[i, j]) == 1)
                   {
                      count++;
                   }
+
+                  j++;
                }
-               
-               
+
+               for ()
+               {
+
+               }
+
                i++;
             }
 
