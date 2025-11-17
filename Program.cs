@@ -530,9 +530,9 @@ namespace WrongWriteCode
 
       static bool HasPath(int[,] grid)
       {
-         const int SIZE = 5;
-         bool[,] visited = new bool[SIZE, SIZE]; // Массив для отметки посещённых ячеек
-         int[,] stack = new int[SIZE * SIZE, 2]; // Стек для DFS (максимально SIZE*SIZE элементов)
+         const int size = 5;
+         bool[,] visited = new bool[size, size]; // Массив для отметки посещённых ячеек
+         int[,] stack = new int[size * size, 2]; // Стек для DFS (максимально SIZE*SIZE элементов)
          int stackTop = -1; // Индекс вершины стека
 
          // Начинаем с [0, 0]
@@ -548,7 +548,7 @@ namespace WrongWriteCode
             stackTop--;
 
             // Если достигли [4, 4], путь найден
-            if (row == SIZE - 1 && col == SIZE - 1)
+            if (row == size - 1 && col == size - 1)
                return true;
 
             // Если уже посещали эту ячейку, пропускаем
@@ -567,8 +567,8 @@ namespace WrongWriteCode
                int newCol = col + dc[d];
 
                // Проверяем границы массива и условие (значение = 1 и не посещена)
-               if (newRow >= 0 && newRow < SIZE &&
-                   newCol >= 0 && newCol < SIZE &&
+               if (newRow >= 0 && newRow < size &&
+                   newCol >= 0 && newCol < size &&
                    grid[newRow, newCol] == 1 &&
                    !visited[newRow, newCol])
                {
