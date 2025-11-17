@@ -403,11 +403,6 @@ namespace WrongWriteCode
                   j++;
                }
 
-               for ()
-               {
-
-               }
-
                i++;
             }
 
