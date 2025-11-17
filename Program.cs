@@ -502,74 +502,7 @@ namespace WrongWriteCode
 
          Console.ReadLine();
       }
-
-      static bool HasPath(int[,] grid)
-      {
-         const int size = 5;
-         bool[,] visited = new bool[size, size]; // Массив для отметки посещённых ячеек
-         int[,] stack = new int[size * size, 2]; // Стек для DFS (максимально SIZE*SIZE элементов)
-         int stackTop = -1; // Индекс вершины стека
-
-         // Начинаем с [0, 0]
-         stackTop++;
-         stack[stackTop, 0] = 0;
-         stack[stackTop, 1] = 0;
-
-         while (stackTop >= 0)
-         {
-            // Достаём текущую ячейку из стека
-            int row = stack[stackTop, 0];
-            int col = stack[stackTop, 1];
-            stackTop--;
-
-            // Если достигли [4, 4], путь найден
-            if (row == size - 1 && col == size - 1)
-               return true;
-
-            // Если уже посещали эту ячейку, пропускаем
-            if (visited[row, col])
-               continue;
-
-            visited[row, col] = true;
-
-            // Проверяем 4 направления: вверх, вниз, влево, вправо
-            int[] dr = { -1, 1, 0, 0 };
-            int[] dc = { 0, 0, -1, 1 };
-
-            for (int d = 0; d < 4; d++)
-            {
-               int newRow = row + dr[d];
-               int newCol = col + dc[d];
-
-               // Проверяем границы массива и условие (значение = 1 и не посещена)
-               if (newRow >= 0 && newRow < size &&
-                   newCol >= 0 && newCol < size &&
-                   grid[newRow, newCol] == 1 &&
-                   !visited[newRow, newCol])
-               {
-                  // Добавляем соседнюю ячейку в стек
-                  stackTop++;
-                  stack[stackTop, 0] = newRow;
-                  stack[stackTop, 1] = newCol;
-               }
-            }
-         }
-
-         return false; // Путь не найден
-      }
-
-      static void PrintGrid(int[,] grid)
-      {
-         for (int i = 0; i < 5; i++)
-         {
-            for (int j = 0; j < 5; j++)
-            {
-               Console.Write(grid[i, j] + " ");
-            }
-            Console.WriteLine();
-         }
-      }
-
+      
       static bool CheckPath(int[,] grid)
       {
          // Очередь для BFS (максимум 25 элементов)
