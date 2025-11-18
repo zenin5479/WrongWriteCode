@@ -505,11 +505,6 @@ namespace WrongWriteCode
 
                f++;
             }
-
-            for ( )
-            {
-
-            }
          }
 
          bool CheckPath(int[,] grid)
