@@ -505,6 +505,7 @@ namespace WrongWriteCode
 
                f++;
             }
+
             for ( )
             {
 
