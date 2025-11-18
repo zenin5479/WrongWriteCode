@@ -466,6 +466,8 @@ namespace WrongWriteCode
          Console.WriteLine("Проверка существования пути из точки в точку");
          Console.WriteLine("--------------------------------------------");
 
+         
+         
          int[,] CompletingGrid()
          {
             int[,] vector = new int[5, 5];
