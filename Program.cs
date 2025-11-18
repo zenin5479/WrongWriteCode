@@ -469,7 +469,6 @@ namespace WrongWriteCode
          int[,] vector = new int[5, 5];
          int[,] CompletingGrid(int[,] list)
          {
-
             Random arbitrary = new Random();
             // Заполняем массив случайными 0 и 1
             int p = 0;
