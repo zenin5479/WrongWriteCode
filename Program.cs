@@ -512,7 +512,7 @@ namespace WrongWriteCode
 
          PrintMatrixInt(vector);
 
-         bool CheckPath(int[,] grid)
+         bool CheckPath(int[,] solid)
          {
             // Очередь для BFS (максимум 25 элементов)
             int[] queueX = new int[25];
@@ -550,7 +550,7 @@ namespace WrongWriteCode
                   int ny = y + dy[i];
 
                   // Проверяем границы и доступность клетки
-                  if (nx >= 0 && nx < 5 && ny >= 0 && ny < 5 && grid[nx, ny] == 1 && !visited[nx, ny])
+                  if (nx >= 0 && nx < 5 && ny >= 0 && ny < 5 && solid[nx, ny] == 1 && !visited[nx, ny])
                   {
                      // Добавляем в очередь и отмечаем посещенной
                      queueX[rear] = nx;
