@@ -465,9 +465,9 @@ namespace WrongWriteCode
          Console.WriteLine("--------------------------------------------");
          Console.WriteLine("Проверка существования пути из точки в точку");
          Console.WriteLine("--------------------------------------------");
-        
-         
-         
+
+
+
          int[,] vector = new int[5, 5];
          Random arbitrary = new Random();
          // Заполняем массив случайными 0 и 1
@@ -488,23 +488,20 @@ namespace WrongWriteCode
          vector[0, 0] = 1;
          vector[4, 4] = 1;
 
-         // Выводим массив
-         Console.WriteLine("Массив:");
-
+         // Метод вывода массива
          void PrintMatrixInt(int[,] collection)
          {
-
-         }
-
-         for (int f = 0; f < 5; f++)
-         {
-            for (int g = 0; g < 5; g++)
+            Console.WriteLine("Массив:");
+            
+            for (int f = 0; f < 5; f++)
             {
-               Console.Write(vector[f, g] + " ");
+               for (int g = 0; g < 5; g++)
+               {
+                  Console.Write(vector[f, g] + " ");
+               }
+               Console.WriteLine();
             }
-            Console.WriteLine();
          }
-
 
          bool CheckPath(int[,] grid)
          {
