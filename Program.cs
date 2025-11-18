@@ -491,6 +491,8 @@ namespace WrongWriteCode
          }
 
          // Метод вывода массива
+         int[,] vector = new int[,] { };
+
          void PrintMatrixInt(int[,] collection)
          {
             Console.WriteLine("Массив:");
