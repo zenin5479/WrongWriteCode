@@ -488,13 +488,8 @@ namespace WrongWriteCode
             // Задаем старт и финиш единицами
             vector[0, 0] = 1;
             vector[4, 4] = 1;
-
-
             return vector;
          }
-
-
-
 
          // Метод вывода массива
          void PrintMatrixInt(int[,] collection)
