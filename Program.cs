@@ -466,6 +466,7 @@ namespace WrongWriteCode
          Console.WriteLine("Проверка существования пути из точки в точку");
          Console.WriteLine("--------------------------------------------");
          int[,] vector = new int[5, 5];
+
          // Метод заполнения массива случайными 0 и 1
          void CompletingGrid(int[,] list)
          {
