@@ -564,10 +564,6 @@ namespace WrongWriteCode
 
                   i++;
                }
-               for ()
-               {
-                  
-               }
             }
 
             return false;
