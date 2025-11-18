@@ -495,15 +495,21 @@ namespace WrongWriteCode
             int f = 0;
             while (f < 5)
             {
-
-               for (int g = 0; g < 5; g++)
+               int g = 0;
+               while (g < 5)
                {
                   Console.Write(vector[f, g] + " ");
+                  g++;
                }
 
-               Console.WriteLine();
+
+               for ( )
+               {
+
+               }
 
                f++;
+               Console.WriteLine();
             }
          }
 
