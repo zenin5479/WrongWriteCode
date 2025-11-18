@@ -507,6 +507,8 @@ namespace WrongWriteCode
             }
          }
 
+         PrintMatrixInt(vector);
+
          bool CheckPath(int[,] grid)
          {
             // Очередь для BFS (максимум 25 элементов)
