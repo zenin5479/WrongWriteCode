@@ -498,6 +498,7 @@ namespace WrongWriteCode
                {
                   Console.Write(vector[f, g] + " ");
                }
+
                Console.WriteLine();
             }
          }
