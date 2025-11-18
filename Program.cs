@@ -492,7 +492,6 @@ namespace WrongWriteCode
          void PrintMatrixInt(int[,] collection)
          {
             Console.WriteLine("Массив:");
-            
             for (int f = 0; f < 5; f++)
             {
                for (int g = 0; g < 5; g++)
