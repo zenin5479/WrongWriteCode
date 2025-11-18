@@ -490,7 +490,7 @@ namespace WrongWriteCode
             return list;
          }
 
-         int[,] CompletingGrid(list);
+         int[,] CompletingGrid(vector);
 
          // Метод вывода массива
          void PrintMatrixInt(int[,] collection)
