@@ -470,17 +470,17 @@ namespace WrongWriteCode
          void CompletingGrid(int[,] list)
          {
             Random arbitrary = new Random();
-            int p = 0;
-            while (p < 5)
+            int i = 0;
+            while (i < 5)
             {
-               int t = 0;
-               while (t < 5)
+               int j = 0;
+               while (j < 5)
                {
-                  list[p, t] = arbitrary.Next(2);
-                  t++;
+                  list[i, j] = arbitrary.Next(2);
+                  j++;
                }
 
-               p++;
+               i++;
             }
 
             // Задаем старт и финиш единицами
