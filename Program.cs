@@ -465,12 +465,11 @@ namespace WrongWriteCode
          Console.WriteLine("--------------------------------------------");
          Console.WriteLine("Проверка существования пути из точки в точку");
          Console.WriteLine("--------------------------------------------");
-
          int[,] vector = new int[5, 5];
+         // Метод заполнения массива случайными 0 и 1
          void CompletingGrid(int[,] list)
          {
             Random arbitrary = new Random();
-            // Заполняем массив случайными 0 и 1
             int p = 0;
             while (p < 5)
             {
