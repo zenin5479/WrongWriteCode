@@ -501,7 +501,7 @@ namespace WrongWriteCode
                int j = 0;
                while (j < 5)
                {
-                  Console.Write(vector[i, j] + " ");
+                  Console.Write(collection[i, j] + " ");
                   j++;
                }
 
