@@ -492,17 +492,17 @@ namespace WrongWriteCode
          void PrintMatrixInt(int[,] collection)
          {
             Console.WriteLine("Массив:");
-            int f = 0;
-            while (f < 5)
+            int i = 0;
+            while (i < 5)
             {
-               int g = 0;
-               while (g < 5)
+               int j = 0;
+               while (j < 5)
                {
-                  Console.Write(vector[f, g] + " ");
-                  g++;
+                  Console.Write(vector[i, j] + " ");
+                  j++;
                }
 
-               f++;
+               i++;
                Console.WriteLine();
             }
          }
