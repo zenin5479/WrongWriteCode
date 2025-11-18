@@ -502,12 +502,6 @@ namespace WrongWriteCode
                   g++;
                }
 
-
-               for ( )
-               {
-
-               }
-
                f++;
                Console.WriteLine();
             }
