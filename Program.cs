@@ -467,7 +467,7 @@ namespace WrongWriteCode
          Console.WriteLine("--------------------------------------------");
 
          int[,] vector = new int[5, 5];
-         int[,] CompletingGrid(int[,] list)
+         void CompletingGrid(int[,] list)
          {
             Random arbitrary = new Random();
             // Заполняем массив случайными 0 и 1
@@ -487,7 +487,6 @@ namespace WrongWriteCode
             // Задаем старт и финиш единицами
             list[0, 0] = 1;
             list[4, 4] = 1;
-            return list;
          }
 
          CompletingGrid(vector);
