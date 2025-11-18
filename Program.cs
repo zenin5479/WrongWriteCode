@@ -491,7 +491,7 @@ namespace WrongWriteCode
          // Выводим массив
          Console.WriteLine("Массив:");
 
-         void Print2DMatrixInt(int[,] Collection)
+         void PrintMatrixInt(int[,] collection)
          {
 
          }
