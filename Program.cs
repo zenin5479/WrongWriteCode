@@ -466,9 +466,10 @@ namespace WrongWriteCode
          Console.WriteLine("Проверка существования пути из точки в точку");
          Console.WriteLine("--------------------------------------------");
 
-         int[,] CompletingGrid()
+         int[,] vector = new int[5, 5];
+         int[,] CompletingGrid(int[,] list)
          {
-            int[,] vector = new int[5, 5];
+
             Random arbitrary = new Random();
             // Заполняем массив случайными 0 и 1
             int p = 0;
@@ -477,7 +478,7 @@ namespace WrongWriteCode
                int t = 0;
                while (t < 5)
                {
-                  vector[p, t] = arbitrary.Next(2);
+                  list[p, t] = arbitrary.Next(2);
                   t++;
                }
 
@@ -485,14 +486,12 @@ namespace WrongWriteCode
             }
 
             // Задаем старт и финиш единицами
-            vector[0, 0] = 1;
-            vector[4, 4] = 1;
-            return vector;
+            list[0, 0] = 1;
+            list[4, 4] = 1;
+            return list;
          }
 
          // Метод вывода массива
-         int[,] vector = new int[,] { };
-
          void PrintMatrixInt(int[,] collection)
          {
             Console.WriteLine("Массив:");
