@@ -541,10 +541,13 @@ namespace WrongWriteCode
 
                // Если дошли до цели
                if (x == 4 && y == 4)
+               {
                   return true;
+               }
 
                // Проверяем всех соседей
-               for (int i = 0; i < 4; i++)
+               int i = 0;
+               while (i < 4)
                {
                   int nx = x + dx[i];
                   int ny = y + dy[i];
@@ -558,6 +561,12 @@ namespace WrongWriteCode
                      rear++;
                      visited[nx, ny] = true;
                   }
+
+                  i++;
+               }
+               for ()
+               {
+                  
                }
             }
 
