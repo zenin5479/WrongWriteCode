@@ -467,26 +467,34 @@ namespace WrongWriteCode
          Console.WriteLine("--------------------------------------------");
 
 
-
-         int[,] vector = new int[5, 5];
-         Random arbitrary = new Random();
-         // Заполняем массив случайными 0 и 1
-         int p = 0;
-         while (p < 5)
+         int[,] CompletingGrid()
          {
-            int t = 0;
-            while (t < 5)
+            int[,] vector = new int[5, 5];
+            Random arbitrary = new Random();
+            // Заполняем массив случайными 0 и 1
+            int p = 0;
+            while (p < 5)
             {
-               vector[p, t] = arbitrary.Next(2);
-               t++;
+               int t = 0;
+               while (t < 5)
+               {
+                  vector[p, t] = arbitrary.Next(2);
+                  t++;
+               }
+
+               p++;
             }
 
-            p++;
+            // Задаем старт и финиш единицами
+            vector[0, 0] = 1;
+            vector[4, 4] = 1;
+
+
+            return vector;
          }
 
-         // Задаем старт и финиш единицами
-         vector[0, 0] = 1;
-         vector[4, 4] = 1;
+
+
 
          // Метод вывода массива
          void PrintMatrixInt(int[,] collection)
